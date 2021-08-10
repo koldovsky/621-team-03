@@ -30,12 +30,12 @@ p {
 }
 
 body {
-    max-width: 1290px;
+    max-width: 1366px;
     margin: auto;
 }
 
 .textdecor {
     color: var(--decoration-color);
     font-family: var(--decoration-font);
-    font-size: 14px;
+    font-size: 21px;
 }
