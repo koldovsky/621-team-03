@@ -1,0 +1,25 @@
+.orange-line {
+    height:2px;width:25%;background-color:#c8693a
+}
+
+.info-buy-image {
+    background: url(../img/loft-interior.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 400px;
+    flex-direction: column;
+    text-align: center;
+}
+
+.info-text-content {
+    font-size: 58px;
+}
+
+.info-buy-text-footer {
+    font-size: 18px;
+    color: #fff;
+}
