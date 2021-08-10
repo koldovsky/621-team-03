@@ -12,11 +12,23 @@
     --secondary-text-color: #898082;
     --decoration-font: 'Great Vibes', cursive;
     --title-font: 'Prata', serif;
+    --paragraph-font: 'Rubik', sans-serif;
 }
+
+.buttons-container {
+    display: flex;
+    justify-content: space-around;
+}
+
 h1, h2, h3, h4 {
     font-family: var(--title-font);
     color: var(--text-color);
 }
+
+p {
+    font-family: var(--paragraph-font);
+}
+
 .container{
     max-width: 1290px;
     margin: auto;
