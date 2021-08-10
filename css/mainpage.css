@@ -1,5 +1,9 @@
 header {
-    display: block; 
+    position: absolute; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: url(../img/main-foto.jpg);
 }
 
@@ -8,6 +12,7 @@ header nav div.container-top {
     max-width: 1290px;
     margin: 0;
     padding: 30px 15px;
+    
 } 
 
 .name-company {
@@ -56,4 +61,24 @@ header nav .menu-top a:hover {
 header nav .social-icons-top a:hover {
     color: inherit;
     fill: currentColor;
+}
+
+.banner {
+    text-align: center;
+    padding-top: 200px;
+}
+
+.main-title-name {
+    font-size: 30px;
+    font-family: Prata, serif;
+}
+
+.text-content {
+    font-size: 18px;
+    font-family: Rubik, sans-serif;
+    color: var(--text-color);
+}
+
+.txt-decor-mp {
+    font-size: 28px;
 }
