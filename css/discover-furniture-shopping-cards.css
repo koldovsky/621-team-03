@@ -1,5 +1,6 @@
 .orange-line {
-    height:2px;width:25%;background-color:#c8693a
+    height:2px;width:25%;background-color:#c8693a;
+    margin: 10px 10px;
 }
 
 .info-buy-image {
@@ -9,6 +10,7 @@
     background-position: center;
     display: flex;
     justify-content: center;
+    align-content: center;
     align-items: center;
     min-height: 400px;
     flex-direction: column;
@@ -22,4 +24,24 @@
 .info-buy-text-footer {
     font-size: 18px;
     color: #fff;
+}
+
+.best-ideas-container {
+    background-color: rgb(27, 22, 19);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    min-height: 200px;
+}
+
+.ideas-text-content {
+    color: #fff;
+    font-size: 18px;
+}
+
+.best-ideas-title {
+    font-size: 42px;
 }

@@ -21,13 +21,22 @@
     justify-content: center;
 }
 
-.container{
-    max-width: 1290px;
+h1, h2, h3, h4 {
+    font-family: var(--title-font);
+    color: var(--text-color);
+}
+
+p {
+    font-family: var(--paragraph-font);
+}
+
+body {
+    max-width: 1366px;
     margin: auto;
 }
 
 .textdecor {
     color: var(--decoration-color);
     font-family: var(--decoration-font);
-    font-size: 14px;
+    font-size: 21px;
 }
