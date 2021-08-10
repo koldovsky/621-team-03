@@ -11,8 +11,11 @@
     --text-color: #FFFFFF;
     --secondary-text-color: #898082;
     --decoration-font: 'Great Vibes', cursive;
-
-
+    --title-font: 'Prata', serif;
+}
+h1, h2, h3, h4 {
+    font-family: var(--title-font);
+    color: var(--text-color);
 }
 .container{
     max-width: 1290px;
