@@ -1,0 +1,59 @@
+header {
+    display: block; 
+    background: url(../img/main-foto.jpg);
+}
+
+header nav div.container-top {
+    background: var(--top-container-color);
+    max-width: 1290px;
+    margin: 0;
+    padding: 30px 15px;
+} 
+
+.name-company {
+    font-weight: bold;
+    font-family: Prata, serif;
+    font-size: 32px;
+    box-sizing:border-box;
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+header nav .menu-top, .social-icons-top {    
+    display: flex;
+    flex-direction: column;
+}
+
+.mainmenu {
+    text-decoration: none;
+    box-sizing: border-box;
+    color: var(--text-color);
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    padding: 0 5px;
+}
+
+header nav .menu-top a:hover {
+    color: var(--decoration-color);
+}
+
+@media (min-width:600px) {
+    header nav div.container-top {
+        display: flex;
+    }
+
+    header nav .menu-top, .social-icons-top {
+        flex-direction: row;
+        align-items: center;
+    }
+}
+
+.socialicons-view {
+    color: var( --decoration-color);
+}
+
+header nav .social-icons-top a:hover {
+    color: inherit;
+    fill: currentColor;
+}

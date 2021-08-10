@@ -3,6 +3,7 @@
 * {
     margin: 0;
     padding: 0;
+
 }
 
 :root {
@@ -11,9 +12,11 @@
     --text-color: #FFFFFF;
     --secondary-text-color: #898082;
     --decoration-font: 'Great Vibes', cursive;
-
-
+    --top-container-color: rgba(0, 0, 0, 0.5);
+    scroll-behavior: smooth;
 }
+
+
 .container{
     max-width: 1290px;
     margin: auto;
