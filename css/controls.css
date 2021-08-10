@@ -1,0 +1,28 @@
+.button {
+    padding: 14px 26px;
+    margin: 5px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 2px;
+    font-family: 'Rubik', sans-serif;
+}
+
+.button-buy {
+    background-color: #C8693A;
+    color: #fff;
+}
+
+.button-buy:hover {
+    opacity: 0.95;
+}
+
+.button-info {
+    color: #fff;
+    background-color: transparent;
+    border: 3px solid #fff;
+}
+
+.button-info:hover {
+    background-color: #fff;
+    color: rgb(27, 22, 19);
+}

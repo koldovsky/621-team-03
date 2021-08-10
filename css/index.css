@@ -16,6 +16,10 @@
     scroll-behavior: smooth;
 }
 
+.buttons-container {
+    display: flex;
+    justify-content: center;
+}
 
 .container{
     max-width: 1290px;
@@ -25,5 +29,5 @@
 .textdecor {
     color: var(--decoration-color);
     font-family: var(--decoration-font);
-    font-size: 0.875rem;
+    font-size: 14px;
 }
