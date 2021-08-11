@@ -128,6 +128,11 @@ main div.join-newsletter form .input-email {
     }
 }
 
+footer section.menu-info .decoration-line {
+    margin: 15px auto;
+
+}
+
 footer section.menu-info {
     background-color: var(--footer-background-color);
 }
@@ -155,9 +160,10 @@ footer section.menu-info .navigation-footer {
 .contacts-footer,
 .information-footer,
 .shop-menu-footer,
-.instagram-photos,
+.instagram-menu,
 .created-by {
     text-align: center;
+
 }
 
 footer section.menu-info .instagram-photos {
@@ -169,6 +175,11 @@ footer section.menu-info .instagram-photos {
 
 
 @media (min-width: 765px) {
+    footer section.menu-info .decoration-line {
+        margin: 15px 0;
+
+    }
+
     footer section.menu-info .navigation-footer {
         display: flex;
         flex-direction: row;
@@ -180,7 +191,7 @@ footer section.menu-info .instagram-photos {
     .contacts-footer,
     .information-footer,
     .shop-menu-footer,
-    .instagram-photos {
+    .instagram-menu {
         text-align: left;
     }
 
