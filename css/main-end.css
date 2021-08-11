@@ -1,7 +1,7 @@
 .video-description {
-    background: url(../img/loft-style-photo.webp);
-    background-attachment: fixed;
+    background: url(../img/videobackground.webp);
     background-size: cover;
+    background-attachment: fixed;
 }
 
 body {
@@ -17,7 +17,7 @@ body {
     display: inline-flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: center;
+    align-items: stretch;
     margin: 25px;
     width: 325px;
     flex-shrink: 2;
@@ -83,6 +83,10 @@ body {
     text-align: center;
 }
 
+.item {
+    padding: 25px 20px 5px 0px;
+}
+
 .textdecor {
     text-align: inherit;
     font-size: 30px;
@@ -109,7 +113,7 @@ body {
     font-weight: 400;
     font-family: 'Rubik', sans-serif;
     line-height: 1.6;
-    padding-top: 100px;
+    padding-top: 55px;
 }
 
 .video-link {
@@ -141,14 +145,10 @@ body {
 h4 {
     font-size: 16px;
     line-height: 1.6;
-    font-family: 'Rubik', sans-serif;
+    font-family: Rubik, sans-serif;
     font-weight: bold;
     text-decoration: none;
     font-style: normal;
     color: var(--text-color);
-    padding: 2px 26px 10px 26px;
-}
-
-.item {
-    padding: 25px 20px 15px 0px;
+    padding: 0px 26px 0px 26px;
 }
