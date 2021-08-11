@@ -1,0 +1,34 @@
+.ad-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin: 50px;
+    padding: auto;
+
+}
+
+ .living-room-cards {
+     background-image: url(../img/living-room.jpg);
+     background-position: center;
+     background-size: cover;
+     min-height: 400px;
+     text-align: left;
+
+}
+
+ .furniture-collections-cards {
+    background-image: url(../img/loft-collect.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    text-align: left;
+
+ }
+
+  .home-office-cards {
+    background-image: url(../img/loft-office.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+    min-height: 400px;
+    text-align: left;
+  }
