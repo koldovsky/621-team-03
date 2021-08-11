@@ -1,3 +1,11 @@
+.decoration-line {
+    height: 2px;
+    width: 25%;
+    background-color: #c8693a;
+    margin: 15px 0;
+
+}
+
 main div.customer-reviews {
     text-align: center;
     margin: auto;
@@ -32,9 +40,19 @@ main div.faq .faq-case {
     padding: 5px;
 }
 
+main div.faq img {
+    min-width: 310px;
+
+}
+
+
 @media (min-width: 765px) {
     main div.faq {
         flex-direction: row;
+    }
+
+    main div.faq img {
+        padding-left: 10px;
     }
 }
 
@@ -52,6 +70,12 @@ main div.advantages .advantage {
     padding: 5px;
 }
 
+main div.advantages .advantage .advantage-icon {
+    background-color: #342e2e;
+    padding: 5%;
+    border-radius: 50%;
+}
+
 @media (min-width: 765px) {
     main div.advantages {
         display: grid;
@@ -60,7 +84,7 @@ main div.advantages .advantage {
 }
 
 @media (min-width: 993px) {
-    main section.advantages {
+    main div.advantages {
         display: flex;
         flex-direction: row;
     }
@@ -85,6 +109,17 @@ main div.join-newsletter form {
     align-items: center;
     flex-direction: column;
 }
+
+main div.join-newsletter form .input-email {
+    border-color: #f2efe9;
+    background-color: rgba(73, 73, 73, 0.24);
+    min-width: 17.3125rem;
+    padding: 16px 25px;
+    margin-top: 12px;
+    color: var(--decoration-color);
+}
+
+
 
 @media (min-width: 765px) {
     main div.join-newsletter {
@@ -131,6 +166,8 @@ footer section.menu-info .instagram-photos {
     grid-gap: 5px;
 }
 
+
+
 @media (min-width: 765px) {
     footer section.menu-info .navigation-footer {
         display: flex;
@@ -146,6 +183,8 @@ footer section.menu-info .instagram-photos {
     .instagram-photos {
         text-align: left;
     }
+
+
 }
 
 @media (min-width: 993px) {
