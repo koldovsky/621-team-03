@@ -1,0 +1,138 @@
+.video-description {
+    background: url(../img/videobackground.webp);
+    background-size: cover;
+    display: block;
+}
+
+body {
+    background-color: var(--basic-color);
+}
+
+.loftstylephoto {
+    display: block;
+    text-align: center;
+}
+
+.line-columns {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin: 25px;
+    width: 325px;
+    flex-shrink: 2;
+}
+
+.line-columns p {
+    color: var(--decoration-color);
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif
+}
+
+.line-columns span {
+    color: var(--secondary-text-color);
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: 400;
+    font-family: Rubik, sans-serif;
+}
+
+.line-columns h3 {
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: 'Prata', serif;
+}
+
+.little-header {
+    font-size: 28px;
+    line-height: 1.4;
+    font-family: Great Vibes, undefined;
+    font-weight: 400;
+    color: var(--decoration-color);
+    text-align: center;
+}
+
+.mainheader {
+    color: var(--text-color);
+    line-height: 1.3;
+    font-family: Prata, serif;
+    font-weight: 400;
+    font-size: 48px;
+    text-align: center;
+}
+
+.about-1 {
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+#decoration-1 {
+    display: block;
+    text-align: center;
+}
+
+.video-description div {
+    padding: 150px 300px 200px 150px;
+}
+
+.video-description a {
+    text-align: center;
+}
+
+.textdecor {
+    text-align: inherit;
+    font-size: 30px;
+    font-family: 'Great Vibes', cursive;
+    color: var(--decoration-color);
+}
+
+.big-header {
+    color: var(--text-color);
+    font-size: 84px;
+    font-family: 'Prata', serif;
+}
+
+.decoration-2 {
+    position: absolute;
+    border-radius: inherit;
+    width: 15%;
+    height: 7%;
+}
+
+.about {
+    font-size: 18px;
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: 'Rubik', sans-serif;
+    line-height: 1.6;
+    padding-top: 55px;
+}
+
+.video-link {
+    float: right;
+    color: var(--text-color);
+    width: 25%;
+    height: 50%;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    word-wrap: break-word;
+    font-weight: bolder;
+}
+
+.youtube-button {
+    color: var(--text-color);
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 80px;
+}
+
+.youtube-button:hover {
+    text-decoration: underline;
+}
