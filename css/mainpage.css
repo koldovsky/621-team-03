@@ -1,18 +1,13 @@
 header {
-    /* position: absolute; 
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0; */
     background: url(../img/main-foto.jpg);
+    width: 100%;
 }
 
 header nav div.container-top {
     background: var(--top-container-color);
-    max-width: 1290px;
+    width: 100%;
     margin: 0;
-    padding: 30px 15px;
-    
+    padding: 30px 40px;
 } 
 
 .name-company {
@@ -44,35 +39,61 @@ header nav .menu-top a:hover {
 }
 
 @media (min-width:600px) {
-    header nav div.container-top {
+
+    header nav div.container {
         display: flex;
     }
 
     header nav .menu-top, .social-icons-top {
         flex-direction: row;
         align-items: center;
+        justify-content: space-around;
+        flex: 1;
     }
 }
 
-.socialicons-view {
-    color: var( --decoration-color);
+.social-icons-top .socialicons-view {
+    background-color: var(--decoration-color);
+    height: 26px;
+    width: 26px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    stroke: currentColor;
+    fill: none;
 }
 
 header nav .social-icons-top a:hover {
-    color: inherit;
     fill: currentColor;
+    stroke: none;
 }
 
 .banner {
+    padding: 40px 40px 40px 200px;
     text-align: center;
-    /* padding-top: 200px; */
+    background-size: cover;
+    background-position: center;
+    min-height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
 }
 
 .main-title-name {
     font-size: 30px;
     font-family: Prata, serif;
+    margin: 25px 0 0;
 }
 
+.decor-line {
+    height: 2px;
+    width: 25%;
+    background-color: var(--decoration-color);
+    margin: 25px 0;
+}
+    
 .text-content {
     font-size: 18px;
     font-family: Rubik, sans-serif;
@@ -81,4 +102,8 @@ header nav .social-icons-top a:hover {
 
 .txt-decor-mp {
     font-size: 28px;
+}
+
+div.buttons-container {
+    padding: 30px 0;
 }

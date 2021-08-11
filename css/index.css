@@ -11,9 +11,11 @@
     --decoration-color: #C8693A;
     --text-color: #FFFFFF;
     --secondary-text-color: #898082;
-    --decoration-font: 'Great Vibes', cursive;
     --top-container-color: rgba(0, 0, 0, 0.5);
     --footer-background-color: #1b1613;
+    --title-font: 'Prata', serif;
+    --paragraph-font: 'Rubik', sans-serif;
+    --decoration-font: 'Great Vibes';
     scroll-behavior: smooth;
 }
 
