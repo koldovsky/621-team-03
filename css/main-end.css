@@ -1,5 +1,6 @@
 .video-description {
-    background: url(../img/videobackground.webp);
+    background: url(../img/loft-style-photo.webp);
+    background-attachment: fixed;
     background-size: cover;
 }
 
