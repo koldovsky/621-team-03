@@ -146,7 +146,7 @@ h4 {
     text-decoration: none;
     font-style: normal;
     color: var(--text-color);
-    padding: 0px 26px 0px 26px;
+    padding: 5px 26px 10px 26px;
 }
 
 .item {
