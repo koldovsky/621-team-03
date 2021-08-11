@@ -8,19 +8,20 @@ header nav div.container-top {
     width: 100%;
     margin: 0;
     padding: 30px 40px;
-} 
+}
 
 .name-company {
     font-weight: bold;
     font-family: Prata, serif;
     font-size: 32px;
-    box-sizing:border-box;
+    box-sizing: border-box;
     color: var(--text-color);
     text-decoration: none;
     text-align: center;
 }
 
-header nav .menu-top, .social-icons-top {    
+header nav .menu-top,
+.social-icons-top {
     display: flex;
     flex-direction: column;
 }
@@ -44,7 +45,8 @@ header nav .menu-top a:hover {
         display: flex;
     }
 
-    header nav .menu-top, .social-icons-top {
+    header nav .menu-top,
+    .social-icons-top {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
@@ -53,7 +55,7 @@ header nav .menu-top a:hover {
 }
 
 .socialicons-view {
-    filter: invert(69%) sepia(51%) saturate(5922%) hue-rotate(341deg) brightness(87%) contrast(77%);
+
     height: 26px;
     width: 26px;
     display: flex;
@@ -95,7 +97,7 @@ header nav .social-icons-top a:hover {
     background-color: var(--decoration-color);
     margin: 25px 0;
 }
-    
+
 .text-content {
     font-size: 18px;
     font-family: Rubik, sans-serif;
@@ -108,8 +110,4 @@ header nav .social-icons-top a:hover {
 
 div.buttons-container {
     padding: 30px 0;
-}
-
-.socialicons-view {
-    filter: invert(69%) sepia(51%) saturate(5922%) hue-rotate(341deg) brightness(87%) contrast(77%);
 }
