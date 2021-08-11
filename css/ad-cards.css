@@ -1,11 +1,18 @@
 .ad-cards {
+    background-color: #261e1c;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 10px;
+    grid-gap: 25px;
     margin: 50px;
-    padding: auto;
+    padding: 25px;
+    height: 500px;
+    width: 80%;
+
 
 }
+ .background-ad-cards {
+  background-color:#261e1c;
+ }
 
  .living-room-cards {
      background-image: url(../img/living-room.jpg);
@@ -13,7 +20,7 @@
      background-size: cover;
      min-height: 400px;
      text-align: left;
-
+     padding-top: 25px;
 }
 
  .furniture-collections-cards {
@@ -22,7 +29,7 @@
     background-size: cover;
     min-height: 400px;
     text-align: left;
-
+    padding: 25px;
  }
 
   .home-office-cards {
@@ -31,4 +38,5 @@
     background-size: cover;
     min-height: 400px;
     text-align: left;
+    padding: 25px;
   }
