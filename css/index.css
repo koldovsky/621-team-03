@@ -24,7 +24,10 @@
     justify-content: center;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
     font-family: var(--title-font);
     color: var(--text-color);
 }
@@ -42,4 +45,8 @@ p {
     color: var(--decoration-color);
     font-family: var(--decoration-font);
     font-size: 21px;
+}
+
+.undertitle-content {
+    color: var(--secondary-text-color);
 }
