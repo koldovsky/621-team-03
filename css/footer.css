@@ -1,97 +1,164 @@
-main section.customer-reviews {
+main div.customer-reviews {
     text-align: center;
     margin: auto;
     padding: 10px;
 }
 
-main section.faq {
+main div.customer-reviews .slide-reviews {
+    color: var(--secondary-text-color);
+}
+
+main div.customer-reviews p:nth-child(4) {
+    color: var(--text-color);
+}
+
+main section.faq-background,
+main section.customer-reviews-background,
+main section.advantages-background {
+    background-color: var(--basic-color);
+}
+
+main div.faq details {
+    color: var(--text-color);
+}
+
+main div.faq {
     padding: 10px;
     display: flex;
     flex-direction: column;
 }
 
-main section.faq .faq-case{
-    padding: 5px ;
-}
-@media(min-width:765px){
-    main section.faq{
-    flex-direction: row;
-}
-}
-main section.advantages {
-    display: flex;
-    flex-direction: column;
-    padding: 10px;
-}
-
-main section.advantages .advantage {
+main div.faq .faq-case {
     padding: 5px;
 }
 
-@media(min-width:765px) {
-    main section.advantages {
+@media (min-width: 765px) {
+    main div.faq {
+        flex-direction: row;
+    }
+}
+
+main div.advantages {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+
+main div.advantages p {
+    color: var(--secondary-text-color);
+}
+
+main div.advantages .advantage {
+    padding: 5px;
+}
+
+@media (min-width: 765px) {
+    main div.advantages {
         display: grid;
         grid-template-columns: 1fr 1fr;
     }
 }
 
-@media(min-width:993px) {
+@media (min-width: 993px) {
     main section.advantages {
         display: flex;
         flex-direction: row;
     }
 }
-main section.join-newsletter{
+
+main section.join-newsletter-background {
+    background-color: var(--footer-background-color);
+}
+
+main section.join-newsletter-background p:nth-child(3) {
+    color: var(--text-color);
+}
+
+main div.join-newsletter {
     display: flex;
     flex-direction: column;
     padding: 10px;
-
 }
 
-main section.join-newsletter form{
+main div.join-newsletter form {
     display: flex;
-    align-items: center; 
-    flex-direction: column;}
+    align-items: center;
+    flex-direction: column;
+}
 
-@media(min-width:765px){
-    main section.join-newsletter{
+@media (min-width: 765px) {
+    main div.join-newsletter {
         flex-direction: row;
         justify-content: space-between;
     }
-    
 }
 
-footer section.menu-info .navigation-footer{
+footer section.menu-info {
+    background-color: var(--footer-background-color);
+}
+
+footer section.menu-info .navigation-footer {
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 10px;
 }
-.contacts-footer, .information-footer, .shop-menu-footer, .instagram-photos, .created-by{
+
+footer section.menu-info .navigation-footer a {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+}
+
+footer section.menu-info .navigation-footer a:hover {
+    color: var(--decoration-color);
+}
+
+footer section.menu-info .navigation-footer {
+    color: var(--secondary-text-color);
+}
+
+.contacts-footer,
+.information-footer,
+.shop-menu-footer,
+.instagram-photos,
+.created-by {
     text-align: center;
 }
+
 footer section.menu-info .instagram-photos {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 5px;
 }
-@media(min-width:765px){
-    footer section.menu-info .navigation-footer{
+
+@media (min-width: 765px) {
+    footer section.menu-info .navigation-footer {
         display: flex;
         flex-direction: row;
-       justify-content: space-around;
-       align-items: center;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
     }
-    .contacts-footer, .information-footer, .shop-menu-footer, .instagram-photos {
+
+    .contacts-footer,
+    .information-footer,
+    .shop-menu-footer,
+    .instagram-photos {
         text-align: left;
+    }
 }
-}
-@media(min-width:993px){
+
+@media (min-width: 993px) {
     footer section.menu-info .instagram-photos {
-        
         grid-template-columns: 1fr 1fr 1fr;
     }
 }
- footer section.created-by{
+
+footer div.created-by {
     padding: 10px;
+    background-color: black;
+}
+
+footer div.created-by p {
+    color: var(--text-color);
 }

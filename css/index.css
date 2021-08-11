@@ -7,12 +7,13 @@
 }
 
 :root {
-    --basic-color: rgb(27, 22, 19);
+    --basic-color: rgb(38, 30, 28);
     --decoration-color: #C8693A;
     --text-color: #FFFFFF;
     --secondary-text-color: #898082;
     --decoration-font: 'Great Vibes', cursive;
     --top-container-color: rgba(0, 0, 0, 0.5);
+    --footer-background-color: #1b1613;
     scroll-behavior: smooth;
 }
 
@@ -30,7 +31,7 @@ p {
     font-family: var(--paragraph-font);
 }
 
-body {
+.container {
     max-width: 1366px;
     margin: auto;
 }
