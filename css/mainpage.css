@@ -52,16 +52,18 @@ header nav .menu-top a:hover {
     }
 }
 
-.social-icons-top .socialicons-view {
-    background-color: var(--decoration-color);
+.socialicons-view {
+    filter: invert(69%) sepia(51%) saturate(5922%) hue-rotate(341deg) brightness(87%) contrast(77%);
     height: 26px;
     width: 26px;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px;
-    stroke: currentColor;
     fill: none;
+    stroke: currentColor;
+    transition: color .2s;
+
 }
 
 header nav .social-icons-top a:hover {
@@ -106,4 +108,8 @@ header nav .social-icons-top a:hover {
 
 div.buttons-container {
     padding: 30px 0;
+}
+
+.socialicons-view {
+    filter: invert(69%) sepia(51%) saturate(5922%) hue-rotate(341deg) brightness(87%) contrast(77%);
 }
