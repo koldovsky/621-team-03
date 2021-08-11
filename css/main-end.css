@@ -135,3 +135,14 @@ body {
 .youtube-button:hover {
     text-decoration: underline;
 }
+
+.furniture-collections p,
+h4 {
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: Rubik, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    font-style: normal;
+    color: var(--text-color);
+}
