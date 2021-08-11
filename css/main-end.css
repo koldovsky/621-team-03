@@ -1,7 +1,6 @@
 .video-description {
     background: url(../img/videobackground.webp);
     background-size: cover;
-    display: block;
 }
 
 body {
