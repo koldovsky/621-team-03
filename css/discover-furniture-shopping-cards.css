@@ -9,6 +9,7 @@
     background: url(../img/loft-interior.jpg) no-repeat center;
     max-height: 350px;
     width: 100%;
+    margin: auto;
 }
 
 .info-buy-text {
@@ -19,22 +20,25 @@
 }
 
 p.info-buy-title.textdecor {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
 }
 
 .info-text-content {
-    font-size: 45px;
+    font-size: 35px;
     text-align: center;
 }
 
 .info-buy-text-footer {
-    font-size: 20px;
+    font-size: 15px;
     text-align: center;
     color: var(--text-color);
 }
 
 @media (min-width: 500px) {
+    .info-buy-image {
+        max-height: 500px;
+    }
     p.info-buy-title.textdecor {
         font-size: 20px;
         
