@@ -1,0 +1,25 @@
+.s-shop-section-wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.shop-button {
+    display: flex;
+    align-items: center!important;
+}
+
+.title-products {
+    color: var(--text-color);
+    text-align: center;
+}
+
+.sell-price {
+    color: var(--text-color);
+    text-align: center;
+}
+
+@media (min-width: 980px) {
+    .s-shop-section-wrapper {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
