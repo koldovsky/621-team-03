@@ -2,7 +2,6 @@
     background-image: url(../img/loft-style-photo.webp);
     background-size: cover;
     background-attachment: fixed;
-    padding-top: 30px;
 }
 
 body {
@@ -152,8 +151,4 @@ h4 {
     font-style: normal;
     color: var(--text-color);
     padding: 0px 26px 0px 26px;
-}
-
-.carousel {
-    padding-bottom: 10px;
 }
