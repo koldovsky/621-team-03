@@ -1,0 +1,117 @@
+.orange-line {
+    height: 2px;
+    width: 25%;
+    background-color: #c8693a;
+    margin: 10px 10px;
+}
+
+section.info-buy {
+    background-color: var(--basic-color);
+    background: cover;
+    
+}
+
+.info-buy-image {
+    background: url(../img/loft-interior.jpg);
+    width: 100vw;
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
+
+.info-buy-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+p.info-buy-title.textdecor {
+    margin-top: 180px;
+    font-size: 15px;
+    text-align: center;
+}
+
+.info-text-content {
+    font-size: 35px;
+    text-align: center;
+}
+
+.info-buy-text-footer {
+    margin-bottom: 5%;
+    font-size: 15px;
+    text-align: center;
+    color: var(--text-color);
+}
+
+@media (min-width: 500px) {
+    p.info-buy-title.textdecor {
+      
+        font-size: 20px; 
+    }
+    .info-text-content {
+        font-size: 58px;
+    }
+
+    .info-buy-text-footer {
+        font-size: 18px;
+    } 
+}
+
+@media (min-width: 980px) {
+    p.info-buy-title.textdecor {
+        
+        
+    }
+}
+
+section.best-ideas {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+}
+
+.best-ideas-container {
+    background-color: var(--basic-color);
+    background: cover;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10% 10%;
+    
+}
+
+p.ideacontent {
+    font-size: 15px;
+}
+
+.best-ideas-title {
+    font-size: 32px;
+}
+
+.ideas-text-content {
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+@media (min-width: 500px) {
+    p.ideacontent {
+        font-size: 20px;
+    }
+    
+    .best-ideas-title {
+        font-size: 42px;
+    }
+    
+    .ideas-text-content {
+        color: var(--text-color);
+        font-size: 18px;
+    }
+}
