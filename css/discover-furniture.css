@@ -7,14 +7,13 @@
 
 section.info-buy {
     background-color: var(--basic-color);
-    background: cover;
-    
+    background-size: cover;
 }
 
 .info-buy-image {
     background: url(../img/loft-interior.jpg);
     width: 100vw;
-    height: 100%;
+    height: 100vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -22,7 +21,9 @@ section.info-buy {
 }
 
 .info-buy-text {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
 }
 
 
@@ -30,11 +31,13 @@ p.info-buy-title.textdecor {
     /* margin-top: 180px; */
     font-size: 15px;
     text-align: center;
+    flex: 1;
 }
 
 .info-text-content {
     font-size: 35px;
     text-align: center;
+    flex: 2;
 }
 
 .info-buy-text-footer {
@@ -42,8 +45,12 @@ p.info-buy-title.textdecor {
     font-size: 15px;
     text-align: center;
     color: var(--text-color);
+    flex: 1;
 }
 
+.buttons-container {
+    flex: 2;
+}
 @media (min-width: 500px) {
     p.info-buy-title.textdecor {
         font-size: 20px; 
@@ -73,7 +80,7 @@ section.best-ideas {
 
 .best-ideas-container {
     background-color: var(--basic-color);
-    background: cover;
+    background-size: cover;
     width: 100vw;
     height: 50vh;
     display: flex;
