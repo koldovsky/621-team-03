@@ -152,6 +152,6 @@ h4 {
 }
 
 .carousel-things {
-    display: block;
+    display: flex;
     align-items: center;
 }
