@@ -150,8 +150,3 @@ h4 {
     color: var(--text-color);
     padding: 0px 26px 0px 26px;
 }
-
-.carousel-things {
-    display: flex;
-    justify-content: center;
-}
