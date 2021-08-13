@@ -7,9 +7,15 @@
     padding: 25px;
     height: 500px;
     width: 80%;
-
-
 }
+
+ .orange-line-center{
+    height: 5px;
+    width: 25%;
+    background-color: #c8693a;
+    margin: 50px;      
+}
+
  .background-ad-cards {
   background-color:#261e1c;
  }
@@ -40,3 +46,8 @@
     text-align: left;
     padding: 25px;
   }
+
+  .title-ad-cards {
+     text-align: center;
+     color: white;
+ }
