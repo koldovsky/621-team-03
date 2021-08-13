@@ -5,15 +5,15 @@
     grid-gap: 25px;
     margin: 50px;
     padding: 25px;
-    height: 500px;
+    height: 600px;
     width: 80%;
 }
 
  .orange-line-center{
     height: 5px;
-    width: 25%;
+    width: 50%;
     background-color: #c8693a;
-    margin: 50px;      
+    margin: 3% 25% 3% 25%;  
 }
 
  .background-ad-cards {
@@ -26,7 +26,7 @@
      background-size: cover;
      min-height: 400px;
      text-align: left;
-     padding-top: 25px;
+     padding: 25px;
 }
 
  .furniture-collections-cards {
@@ -50,4 +50,27 @@
   .title-ad-cards {
      text-align: center;
      color: white;
- }
+     padding: 35px;
+    
+}
+
+  .about-loft-style-design{
+      height: 600px;
+      display: flex;
+      flex-direction: row;
+}
+
+  .abbreviated-text-card {
+      padding: 100% 1% 1% 1%;
+}
+  .little-title-ad-cards {
+      font-family: var(--paragraph-font);
+  }
+  .info-text-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+      padding: 15px;
+  }
+
+      
