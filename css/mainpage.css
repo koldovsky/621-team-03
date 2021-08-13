@@ -41,7 +41,7 @@ header nav div.container-top {
           flex: 1;
 }
 
-/* .mainbanner {
+ .mainbanner {
     display: -webkit-flex;
     display: flex;
 }
@@ -52,7 +52,7 @@ header nav div.container-top {
 .banner {
     -webkit-flex: 2;
           flex: 2;
-}             */
+}             
 
 
 
@@ -142,6 +142,7 @@ header nav .social-icons-top a:hover {
     font-size: 18px;
     font-family: Rubik, sans-serif;
     color: var(--text-color);
+    text-align: left;
 }
 
 .txt-decor-mp {
