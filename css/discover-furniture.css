@@ -7,8 +7,7 @@
 
 section.info-buy {
     background-color: var(--basic-color);
-    background: cover;
-    
+    background-size: cover;
 }
 
 .info-buy-image {
@@ -23,32 +22,37 @@ section.info-buy {
 
 .info-buy-text {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: column;
+    align-content: center;
 }
 
+
 p.info-buy-title.textdecor {
-    margin-top: 180px;
+    /* margin-top: 180px; */
     font-size: 15px;
     text-align: center;
+    flex: 1;
 }
 
 .info-text-content {
     font-size: 35px;
     text-align: center;
+    flex: 2;
 }
 
 .info-buy-text-footer {
-    margin-bottom: 5%;
+    /* margin-bottom: 5%; */
     font-size: 15px;
     text-align: center;
     color: var(--text-color);
+    flex: 1;
 }
 
+.buttons-container {
+    flex: 2;
+}
 @media (min-width: 500px) {
     p.info-buy-title.textdecor {
-      
         font-size: 20px; 
     }
     .info-text-content {
@@ -60,12 +64,12 @@ p.info-buy-title.textdecor {
     } 
 }
 
-@media (min-width: 980px) {
+/* @media (min-width: 980px) {
     p.info-buy-title.textdecor {
         
         
     }
-}
+} */
 
 section.best-ideas {
     top: 0;
@@ -76,7 +80,7 @@ section.best-ideas {
 
 .best-ideas-container {
     background-color: var(--basic-color);
-    background: cover;
+    background-size: cover;
     width: 100vw;
     height: 50vh;
     display: flex;
