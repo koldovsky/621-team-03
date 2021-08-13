@@ -153,5 +153,5 @@ h4 {
 
 .carousel-things {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
