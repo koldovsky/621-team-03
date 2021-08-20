@@ -171,6 +171,7 @@ main div.join-newsletter form .input-email {
     border-color: #f2efe9;
     background-color: rgba(73, 73, 73, 0.24);
     min-width: 17.3125rem;
+    width: 100%;
     padding: 16px 25px;
     margin-top: 12px;
     color: var(--decoration-color);
