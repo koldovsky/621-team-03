@@ -2,18 +2,18 @@
     height: 2px;
     width: 25%;
     background-color: #c8693a;
-    margin: 10px 10px;
+    margin: 0 auto;
 }
 
 section.info-buy {
     background-color: var(--basic-color);
     background-size: cover;
+    height: 100vh;
 }
 
 .info-buy-image {
     background: url(../img/loft-interior.jpg);
-    width: 100vw;
-    height: 100vh;
+    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,7 +23,9 @@ section.info-buy {
 .info-buy-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-content: center;
+    height: 100%;
 }
 
 
@@ -41,16 +43,14 @@ p.info-buy-title.textdecor {
 }
 
 .info-buy-text-footer {
-    /* margin-bottom: 5%; */
+    margin-top: 10px;
     font-size: 15px;
     text-align: center;
     color: var(--text-color);
     flex: 1;
 }
 
-.buttons-container {
-    flex: 2;
-}
+
 @media (min-width: 500px) {
     p.info-buy-title.textdecor {
         font-size: 20px; 
@@ -74,21 +74,20 @@ p.info-buy-title.textdecor {
 section.best-ideas {
     top: 0;
     left: 0;
-    width: 100vw;
-    height: 400px;
+    height: 100%;
 }
 
 .best-ideas-container {
     background-color: var(--basic-color);
     background-size: cover;
-    width: 100vw;
-    height: 50vh;
+    height: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    flex-direction: column;
     text-align: center;
     padding: 10% 10%;
+    margin: 0 auto;
     
 }
 
@@ -98,11 +97,13 @@ p.ideacontent {
 
 .best-ideas-title {
     font-size: 32px;
+    margin-bottom: 10px;
 }
 
 .ideas-text-content {
     color: var(--text-color);
     font-size: 15px;
+    margin-top: 10px;
 }
 
 @media (min-width: 500px) {
@@ -119,3 +120,4 @@ p.ideacontent {
         font-size: 18px;
     }
 }
+

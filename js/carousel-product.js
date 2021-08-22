@@ -76,14 +76,13 @@
       for (const product of allProducts) {
           productsHtml.push (`
           <div class="carousel-item">
-          <a href="product.html"><img src="${product.imgUrl}" class="carousel-img-s-cards" alt="${product.name}"></a>
-          <h5>${product.name}</h5>
-          <p>${product.price} USD</p>
+          <a href="product.html" class="carousel-image-link"><img src="${product.imgUrl}" class="carousel-img-s-cards" alt="${product.name}"></a>
+          <h4 class="s-carousel-text">${product.name}</h4>
+          <p class="s-carousel-product-price">${product.price} USD</p>
           <button name="add-to-cart-button" class="button button-buy">Add to cart</button>
           </div>
           `);
       }
-      //document.querySelector('.carousel-inner').innerHTML = productsHtml;
       return productsHtml;
   }
   showProducts(products)
@@ -99,9 +98,17 @@
     if (currentSlideIdx >= slidesProducts.length) currentSlideIdx = 0;
     showCurrentProductSlide();
   }
-  setInterval(nextProductSlide, 3000);
+  function previousProductSlide() {
+    currentSlideIdx--;
+    if (currentSlideIdx < 0) currentSlideIdx = slidesProducts.length-1;
+    showCurrentProductSlide();
+  }
+  setInterval(nextProductSlide, 5000);
   showCurrentProductSlide();
-  // для кнопки
-  // document.querySelector('селектор кнопки следующего слайда')
-  //.addEventListener('click', nextProductSlide);
+  
+  document.querySelector('.move-slide-right')
+  .addEventListener('click', nextProductSlide);
+
+  document.querySelector('.move-slide-left')
+  .addEventListener('click', previousProductSlide);
 })();
