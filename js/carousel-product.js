@@ -1,5 +1,5 @@
-(function() {
-    const productsJson = `[
+(function () {
+  const productsJson = `[
         {
             "id": "001",
             "name": "Grey sofa",
@@ -68,23 +68,40 @@
         }
     ]`;
 
-    const products = JSON.parse(productsJson);
+  const products = JSON.parse(productsJson);
 
-    function showProducts(products) {
-        const allProducts = [...products];
-        let productsHtml = '';
-        for (const product of allProducts) {
-            productsHtml += `
-            <div class="carousel-item">
-            <a href="product.html"><img src="${product.imgUrl}" class="carousel-img-s-cards" alt="${product.name}"></a>
-            <h5>${product.name}</h5>
-            <p>${product.price} USD</p>
-            <button name="add-to-cart-button" class="button button-buy">Add to cart</button>
-            </div>
-            `
-        }
-        document.querySelector('.carousel-inner').innerHTML = productsHtml;
-    }
-    showProducts(products)
-   
+  let productsHtml = [];
+  function showProducts(products) {
+      const allProducts = [...products];
+      for (const product of allProducts) {
+          productsHtml.push (`
+          <div class="carousel-item">
+          <a href="product.html"><img src="${product.imgUrl}" class="carousel-img-s-cards" alt="${product.name}"></a>
+          <h5>${product.name}</h5>
+          <p>${product.price} USD</p>
+          <button name="add-to-cart-button" class="button button-buy">Add to cart</button>
+          </div>
+          `);
+      }
+      //document.querySelector('.carousel-inner').innerHTML = productsHtml;
+      return productsHtml;
+  }
+  showProducts(products)
+
+  const slidesProducts = [...productsHtml];
+  let currentSlideIdx = 0;
+  function showCurrentProductSlide() {
+    const slideContainer = document.querySelector(".carousel-inner");
+    slideContainer.innerHTML = slidesProducts[currentSlideIdx];
+  }
+  function nextProductSlide() {
+    currentSlideIdx++;
+    if (currentSlideIdx >= slidesProducts.length) currentSlideIdx = 0;
+    showCurrentProductSlide();
+  }
+  setInterval(nextProductSlide, 3000);
+  showCurrentProductSlide();
+  // для кнопки
+  // document.querySelector('селектор кнопки следующего слайда')
+  //.addEventListener('click', nextProductSlide);
 })();
