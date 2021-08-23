@@ -20,6 +20,38 @@ header {
     text-align: center;
 }
 
+.burger-icon {
+    display: block;
+    position: relative;
+    width: 30px;
+    height: 20px;
+}
+.burger-icon:before,
+.burger-icon:after {
+    content: '';
+    background-color: #FFF;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0;
+}
+.burger-icon:before {
+    top: 0;
+}
+.burger-icon::after {
+    bottom: 0;
+}
+.burger-icon span {
+    position: absolute;
+    background-color: #FFF;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    top: 9px;
+}
+    
+
+
 .mainmenu {
     text-decoration: none;
     box-sizing: border-box;
@@ -60,6 +92,9 @@ header nav .social-icons-top a:hover {
         flex-direction: row;
         align-items: center;
         justify-content: space-between;
+    }
+    .burger-icon {
+        display: none;
     }
     .mainbanner {
         display: -webkit-flex;
