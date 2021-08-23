@@ -12,11 +12,13 @@
 .carousel-image-link {
   display: flex;
   justify-content: space-evenly;
+  min-width: 100%;
+  padding: 10px 50px;
 }
 
 .carousel-img-s-cards {
-  min-width: 300px;
-  margin: auto 0;
+  min-width: 95%;
+ 
 }
 
 .carousel-products {
@@ -39,6 +41,8 @@
   border-radius: 50%;
   margin: auto 0;
   padding: 0px 10px;
+  background-color: var(--basic-color);
+  border-color: var(--basic-color);
 }
 
 .s-carousel-arrow-left {
