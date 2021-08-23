@@ -18,7 +18,22 @@ main div.customer-reviews {
     margin: auto;
     padding: 10px;
 }
-
+.review-carousel-position{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.s-carousel-arrow-review {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: auto 0;
+    background-color: rgba(255,255,255,0);
+    border-color: rgba(255,255,255,0);
+}
+.s-carousel-arrow-left-review {
+    transform: rotate(180deg);
+}
 main div.customer-reviews h2 {
     font-size: 2.125rem;
 }

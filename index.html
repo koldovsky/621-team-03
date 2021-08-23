@@ -67,7 +67,7 @@
 
 
     <main>
-        <div class="background-ad-cards"></div>
+        <div class="background-ad-cards container"></div>
         <div class="ad-cards">
             <div class="living-room-cards">
                 <div class="abbreviated-text-card">
@@ -105,7 +105,7 @@
             </div>
         </div>
         <section>
-            <div class="title-ad-cards">
+            <div class="title-ad-cards container">
                 <h4 class="textdecor">100% exclusive</h4>
                 <h2 class="info-text-content">It Will Make Your Interior Special</h2>
                 <div class="orange-line-center"></div>
@@ -257,10 +257,14 @@
                 <h2>What Our Customers Say</h2>
 
                 <p>Read some stories from our customers below.</p>
-                <button class="s-carousel-arrow move-slide-left-review"><img src="img/left-arrow.svg" class="s-carousel-arrow-left" alt="arrow left"></button>
-                <div class="customer-reviews-carousel"></div>
-                <button class="s-carousel-arrow move-slide-right-review"><img src="img/left-arrow.svg" alt="arrow right"></button>
-
+                <div class="review-carousel-position" >
+                    <button class="s-carousel-arrow-review move-slide-left-review"><img src="img/left-arrow.svg"
+                            class="s-carousel-arrow-left-review" alt="arrow left"></button>
+                    <div class="customer-reviews-carousel"></div>
+                    <button class="s-carousel-arrow-review move-slide-right-review"><img src="img/left-arrow.svg"
+                            alt="arrow right"></button>
+                </div>
+               
             </div>
         </section>
         <div class="horizontal-line "></div>
@@ -426,6 +430,7 @@
     </footer>
     <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
     <script src="js/carousel-product.js"></script>
+    <script src="js/carousel-reviews.js"></script>
     <script src="js/clock.js"></script>
     <script src="js/burger.js"></script>
 </body>
