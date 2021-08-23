@@ -52,6 +52,28 @@
     }
     setInterval(nextReviewSlide, 5000);
     showCurrentReviewSlide();
+    function clickFirstDot(){
+      currentReviewSlideIdx = 0 
+      showCurrentReviewSlide()
+    } 
+    function clickSecondDot(){
+      currentReviewSlideIdx = 1
+      showCurrentReviewSlide()
+    } 
+    function clickThirdDot(){
+      currentReviewSlideIdx = 2
+      showCurrentReviewSlide()
+    } 
+    document
+      .querySelector(".dot-first")
+      .addEventListener("click", clickFirstDot);
+    document
+      .querySelector(".dot-second")
+      .addEventListener("click", clickSecondDot);
+    document
+      .querySelector(".dot-third")
+      .addEventListener("click", clickThirdDot);
+    document
   
     document
       .querySelector(".move-slide-right-review")
