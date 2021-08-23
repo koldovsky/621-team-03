@@ -9,6 +9,7 @@ section.info-buy {
     background-color: var(--basic-color);
     background-size: cover;
     height: 100vh;
+    margin-top: 20px;
 }
 
 .info-buy-image {

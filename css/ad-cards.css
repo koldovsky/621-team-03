@@ -3,9 +3,9 @@
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 25px;
-    margin: 50px;
-    padding: 25px;
-    height: 600px;
+    align-self: end;
+    margin: 30px auto;
+    height: 80%;
     width: 80%;
 }
 
@@ -24,7 +24,7 @@
      background-image: url(../img/living-room.jpg);
      background-position: center;
      background-size: cover;
-     min-height: 400px;
+     min-height: 100%;
      text-align: left;
      padding: 25px;
 }
@@ -33,7 +33,7 @@
     background-image: url(../img/loft-collect.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 400px;
+    min-height: 100%;
     text-align: left;
     padding: 25px;
  }
@@ -42,7 +42,7 @@
     background-image: url(../img/loft-office.jpg.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 400px;
+    min-height: 100%;
     text-align: left;
     padding: 25px;
   }
@@ -62,6 +62,9 @@
 
   .abbreviated-text-card {
       padding: 100% 1% 1% 1%;
+      display: flex;
+      flex-direction: column;
+      align-self: flex-end;
 }
   .little-title-ad-cards {
       font-family: var(--paragraph-font);
