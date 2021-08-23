@@ -56,12 +56,12 @@
 
     function showFurnitureThings(furnitureThings) {
         const allFurnitureThings = [...furnitureThings];
-        for (const furnitureThing of allFurnitureThings) {
+        for (const thing of allFurnitureThings) {
             furnitureThingsHtml.push(`
           <div class="carousel-item">
-          <a class="carousel-image-link"><img src="${furnitureThings.imgUrl}" class="carousel-img-s-cards" alt="${furnitureThings.name}"></a>
-          <h4 class="s-carousel-text">${furnitureThings.name}</h4>
-          <p class="s-carousel-product-price">${furnitureThings.price} USD</p>
+          <a class="carousel-image-link"><img src="${thing.imgUrl}" class="carousel-img-s-cards" alt="${thing.name}"></a>
+          <h4 class="s-carousel-text">${thing.name}</h4>
+          <p class="s-carousel-product-price">${thing.price} USD</p>
           <button name="add-to-cart-button" class="button button-buy">Add to cart</button>
           </div>
           `);
