@@ -90,8 +90,14 @@
   const slidesProducts = [...productsHtml];
   let currentSlideIdx = 0;
   function showCurrentProductSlide() {
-    const slideContainer = document.querySelector(".carousel-inner");
+    console.log(window.innerWidth);
+    if (window.innerWidth < 700) {
+    let slideContainer = document.querySelector(".carousel-inner");
     slideContainer.innerHTML = slidesProducts[currentSlideIdx];
+    } else {
+    let slideContainer = document.querySelector(".carousel-inner");
+    slideContainer.innerHTML = slidesProducts[currentSlideIdx] + slidesProducts[currentSlideIdx+1] + slidesProducts[currentSlideIdx+2];
+    }
   }
   function nextProductSlide() {
     currentSlideIdx++;
@@ -103,12 +109,15 @@
     if (currentSlideIdx < 0) currentSlideIdx = slidesProducts.length-1;
     showCurrentProductSlide();
   }
+
   setInterval(nextProductSlide, 5000);
   showCurrentProductSlide();
+
+  window.addEventListener('resize', showCurrentProductSlide);
   
   document.querySelector('.move-slide-right')
   .addEventListener('click', nextProductSlide);
-
+  
   document.querySelector('.move-slide-left')
   .addEventListener('click', previousProductSlide);
 })();

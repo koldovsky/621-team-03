@@ -1,9 +1,9 @@
 #s-carousel-products {
-    
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-evenly; 
 }
+
 
 .carousel-item{
     display: flex;
@@ -42,4 +42,9 @@
 }
 .s-carousel-arrow-left {
     transform: rotate(180deg);
+}
+
+.carousel-inner {
+    display: flex;
+    flex-direction: row;
 }
