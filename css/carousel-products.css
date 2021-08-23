@@ -18,7 +18,6 @@
 
 .carousel-img-s-cards {
   min-width: 95%;
- 
 }
 
 .carousel-products {
@@ -40,7 +39,8 @@
   height: 32px;
   border-radius: 50%;
   margin: auto 0;
-  padding: 0px 10px;
+  border: 0;
+  padding: 0;
   background-color: var(--basic-color);
   border-color: var(--basic-color);
 }
