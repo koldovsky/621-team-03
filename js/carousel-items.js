@@ -1,53 +1,53 @@
 (function() {
     const furnitureThingsJson = `[
-      {
-          "id": "001",
-          "name": "Kitchen"
-          "price": "4000.00"
-          "imgUrl": "img/kitchen.jpg"
-  
-      },
-      {
-          "id": "002",
-          "name": "Lights"
-          "price": "320.00"
-          "imgUrl": "img/loftlights.jpg"
-      },
-      {
-          "id": "003",
-          "name": "Black Chair"
-          "price": "240.00"
-          "imgUrl": "img/chair.jpg"
-  
-      },
-      {
-        "id": "004",
-        "name": "Future Bed"
-        "price": "1300.00"
-        "imgUrl": "img/futurebed.jpg"
-
-    },
-    {
-        "id": "005",
-        "name": "Table"
-        "price": "325.00"
-        "imgUrl": "img/table.jpg"
-
-    },
-    {
-        "id": "006",
-        "name": "American Bed"
-        "price": "400.00"
-        "imgUrl": "img/americanbed.jpg"
-
-    },
-    {
-        "id": "007",
-        "name": "Sideboard Table"
-        "price": "270.00"
-        "imgUrl": "img/tablesb.jpg"
-
-    },
+        {
+            "id": "001",
+            "name": "Kitchen",
+            "price": "4000.00",
+            "imgUrl": "img/kitchen.jpg"
+    
+        },
+        {
+            "id": "002",
+            "name": "Lights",
+            "price": "320.00",
+            "imgUrl": "img/loftlights.jpg"
+        },
+        {
+            "id": "003",
+            "name": "Black Chair",
+            "price": "240.00",
+            "imgUrl": "img/chair.jpg"
+    
+        },
+        {
+            "id": "004",
+            "name": "Future Bed",
+            "price": "1300.00",
+            "imgUrl": "img/futurebed.jpg"
+    
+        },
+        {
+            "id": "005",
+            "name": "Table",
+            "price": "325.00",
+            "imgUrl": "img/table.jpg"
+    
+        },
+        {
+            "id": "006",
+            "name": "American Bed",
+            "price": "400.00",
+            "imgUrl": "img/americanbed.jpg"
+    
+        },
+        {
+            "id": "007",
+            "name": "Sideboard Table",
+            "price": "270.00",
+            "imgUrl": "img/tablesb.jpg"
+    
+        }
   ]`;
 
     const furnitureThings = JSON.parse(furnitureThingsJson);
@@ -97,10 +97,10 @@
     showCurrentThingSlide();
 
     document
-        .querySelector(".move-slide-right")
+        .querySelector(".right-click")
         .addEventListener("click", nextThingSlide);
 
     document
-        .querySelector(".move-slide-left")
+        .querySelector(".left-click")
         .addEventListener("click", previousThingSlide);
 })();
