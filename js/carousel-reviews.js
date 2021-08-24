@@ -51,12 +51,11 @@
     showCurrentReviewSlide();
   }
   function dotsClick(idx) {
-    currentReviewSlideIdx = idx
+    currentReviewSlideIdx = idx;
     showCurrentReviewSlide();
   }
-  setInterval(nextReviewSlide, 5000);
+  setInterval(nextReviewSlide, 10000);
   showCurrentReviewSlide();
-
 
   document
     .querySelector(".move-slide-right-review")
@@ -66,14 +65,17 @@
     .querySelector(".move-slide-left-review")
     .addEventListener("click", previousReviewSlide);
 
-
   function generateDots() {
     const dotsContainer = document.querySelector(".dots");
     for (let i = 0; i < customerReviews.length; i++) {
       dotsContainer.innerHTML += `<button class="dot"></button>`;
     }
+
     const dots = document.querySelectorAll(".dot");
-    dots.forEach((button, idx) => button.addEventListener("click", () => dotsClick(idx)))
+    console.log(dots);
+    dots.forEach((button, idx) =>
+      button.addEventListener("click", () => dotsClick(idx))
+    );
   }
   generateDots();
 })();
