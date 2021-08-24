@@ -1,5 +1,5 @@
 (function () {
-    const customerReviewsJson = `[
+  const customerReviewsJson = `[
       {
           "reviewId": "001",
           "reviewStr": "Great lights, amazing customer service <br> Delivered speedily and with special care from the customer service department as we needed it by a certain date. They couldn’t guarantee this due to the circumstances with covid etc. But they went above and beyond and the lights arrived on time!Although the actual lights are smaller than we imagined, they look great and we are moving them to a different part of the house.The quality is great( of course!)"
@@ -16,70 +16,64 @@
   
       }
   ]`;
-  
-    const customerReviews = JSON.parse(customerReviewsJson);
-    let customerReviewsHtml = [];
-    function showCustomerReviews(customerReviews) {
-      const allCustomerReviews = [...customerReviews];
-      for (const review of allCustomerReviews) {
-        customerReviewsHtml.push(
-          `<p class="slide-reviews undertitle-content">${review.reviewStr}</p>`
-        );
-      }
-      return customerReviewsHtml;
-    }
-  
-    showCustomerReviews(customerReviews);
-    const slidesReviews = [...customerReviewsHtml];
-    let currentReviewSlideIdx = 0;
-    function showCurrentReviewSlide() {
-      const slideReviewContainer = document.querySelector(
-        ".customer-reviews-carousel"
+
+  const customerReviews = JSON.parse(customerReviewsJson);
+  let customerReviewsHtml = [];
+  function showCustomerReviews(customerReviews) {
+    const allCustomerReviews = [...customerReviews];
+    for (const review of allCustomerReviews) {
+      customerReviewsHtml.push(
+        `<p class="slide-reviews undertitle-content">${review.reviewStr}</p>`
       );
-      slideReviewContainer.innerHTML = slidesReviews[currentReviewSlideIdx];
     }
-    function nextReviewSlide() {
-      currentReviewSlideIdx++;
-      if (currentReviewSlideIdx >= slidesReviews.length)
-        currentReviewSlideIdx = 0;
-      showCurrentReviewSlide();
-    }
-    function previousReviewSlide() {
-      currentReviewSlideIdx--;
-      if (currentReviewSlideIdx < 0)
-        currentReviewSlideIdx = slidesReviews.length - 1;
-      showCurrentReviewSlide();
-    }
-    setInterval(nextReviewSlide, 5000);
+    return customerReviewsHtml;
+  }
+
+  showCustomerReviews(customerReviews);
+  const slidesReviews = [...customerReviewsHtml];
+  let currentReviewSlideIdx = 0;
+  function showCurrentReviewSlide() {
+    const slideReviewContainer = document.querySelector(
+      ".customer-reviews-carousel"
+    );
+    slideReviewContainer.innerHTML = slidesReviews[currentReviewSlideIdx];
+  }
+  function nextReviewSlide() {
+    currentReviewSlideIdx++;
+    if (currentReviewSlideIdx >= slidesReviews.length)
+      currentReviewSlideIdx = 0;
     showCurrentReviewSlide();
-    function clickFirstDot(){
-      currentReviewSlideIdx = 0 
-      showCurrentReviewSlide()
-    } 
-    function clickSecondDot(){
-      currentReviewSlideIdx = 1
-      showCurrentReviewSlide()
-    } 
-    function clickThirdDot(){
-      currentReviewSlideIdx = 2
-      showCurrentReviewSlide()
-    } 
-    document
-      .querySelector(".dot-first")
-      .addEventListener("click", clickFirstDot);
-    document
-      .querySelector(".dot-second")
-      .addEventListener("click", clickSecondDot);
-    document
-      .querySelector(".dot-third")
-      .addEventListener("click", clickThirdDot);
-    document
-  
-    document
-      .querySelector(".move-slide-right-review")
-      .addEventListener("click", nextReviewSlide);
-  
-    document
-      .querySelector(".move-slide-left-review")
-      .addEventListener("click", previousReviewSlide);
-  })();
+  }
+  function previousReviewSlide() {
+    currentReviewSlideIdx--;
+    if (currentReviewSlideIdx < 0)
+      currentReviewSlideIdx = slidesReviews.length - 1;
+    showCurrentReviewSlide();
+  }
+  function dotsClick(idx) {
+    currentReviewSlideIdx = idx
+    showCurrentReviewSlide();
+  }
+  setInterval(nextReviewSlide, 5000);
+  showCurrentReviewSlide();
+
+
+  document
+    .querySelector(".move-slide-right-review")
+    .addEventListener("click", nextReviewSlide);
+
+  document
+    .querySelector(".move-slide-left-review")
+    .addEventListener("click", previousReviewSlide);
+
+
+  function generateDots() {
+    const dotsContainer = document.querySelector(".dots");
+    for (let i = 0; i < customerReviews.length; i++) {
+      dotsContainer.innerHTML += `<button class="dot"></button>`;
+    }
+    const dots = document.querySelectorAll(".dot");
+    dots.forEach((button, idx) => button.addEventListener("click", () => dotsClick(idx)))
+  }
+  generateDots();
+})();

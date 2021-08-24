@@ -17,6 +17,7 @@ main div.customer-reviews {
     text-align: center;
     margin: auto;
     padding: 10px;
+    margin: 35px 0px;
 }
 .review-carousel-position{
     display: flex;
@@ -24,6 +25,7 @@ main div.customer-reviews {
     justify-content: space-between;
 }
 .s-carousel-arrow-review {
+    cursor: pointer;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -44,6 +46,8 @@ main div.customer-reviews>p {
 
 main div.customer-reviews .slide-reviews {
     color: var(--secondary-text-color);
+    min-width: 260px;
+    max-width: 760px;
 }
 
 main div.customer-reviews>p:nth-child(3) {
