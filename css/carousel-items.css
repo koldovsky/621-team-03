@@ -1,0 +1,11 @@
+.s-carousel-main {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    margin: auto 0;
+    border: 0;
+    padding: 0;
+    background-color: var(--basic-color);
+    border-color: var(--basic-color);
+    ;
+}

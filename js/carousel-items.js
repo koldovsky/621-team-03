@@ -59,7 +59,7 @@
         for (const thing of allFurnitureThings) {
             furnitureThingsHtml.push(`
           <div class="carousel-item">
-          <a class="carousel-image-link"><img src="${thing.imgUrl}" class="carousel-img-s-cards" alt="${thing.name}"></a>
+          <a class="carousel-image-thing"><img src="${thing.imgUrl}" class="carousel-img-s-cards" alt="${thing.name}"></a>
           <h4 class="s-carousel-text">${thing.name}</h4>
           <p class="s-carousel-product-price">${thing.price} USD</p>
           <button name="add-to-cart-button" class="button button-buy">Add to cart</button>
