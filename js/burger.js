@@ -1,8 +1,8 @@
 (function () {
-
+    
+    const menuTop = document.querySelector('.menu-top');
+    const burgerIcon = document.querySelector('.openMenu');
     function showBurgerControls() {
-        const menuTop = document.querySelector('.menu-top');
-        const burgerIcon = document.querySelector('.openMenu');
         if (window.innerWidth < 700) {
             burgerIcon.style.display = 'block';
             menuTop.style.display = 'none';
@@ -13,7 +13,7 @@
     }
     window.addEventListener('resize', showBurgerControls);
     showBurgerControls();
-})();
+
 
 const mainMenu = document.querySelector('.nav_menu');
 const closeMenu = document.querySelector('.closeMenu');
@@ -29,5 +29,5 @@ function show(){
 function close(){
     mainMenu.style.top = '-100%';
 }
-
+})();
 
