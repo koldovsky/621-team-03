@@ -27,6 +27,10 @@ main div.customer-reviews .decoration-line {
   justify-content: space-between;
   margin: 20px 0;
 }
+
+.carousel-review-size{
+  height: 250px;
+}
 .s-carousel-arrow-review {
   cursor: pointer;
   width: 32px;
@@ -60,6 +64,9 @@ main div.customer-reviews .customer-reviews-undertitle {
   main div.customer-reviews h2 {
     font-size: 2.5625rem;
   }
+  .carousel-review-size{
+    height: 110px;
+  }
 }
 
 main section.faq-background,
@@ -72,16 +79,43 @@ main div.faq-info > h2 {
   font-size: 2.125rem;
 }
 
-main div.faq details summary {
+.accordion {
+  background-color: rgba(255, 255, 255, 0);
   color: var(--text-color);
   font-family: var(--title-font);
   font-size: 1.375rem;
+  cursor: pointer;
+  padding: 18px 0;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+}
+.panel {
+  padding-bottom: 20px;
+  background-color: rgba(255, 255, 255, 0);
+  display: none;
+  overflow: hidden;
+}
+.accordion:after {
+  content: "\02795"; 
+  font-size: 15px;
+
+
+
+
+  float: right;
+  margin: auto 0 auto 20px;
 }
 
-main div.faq details p {
-  font-family: var(--paragraph-font);
-  font-size: 1rem;
+.active:after {
+  content: "\2796"; 
+
 }
+
 
 main div.faq {
   padding: 10px;
@@ -89,9 +123,6 @@ main div.faq {
   flex-direction: column;
 }
 
-main div.faq .faq-case {
-  padding: 5px;
-}
 
 main div.faq img {
   min-width: 310px;
@@ -311,12 +342,14 @@ footer div.created-by p {
   transition: background-color 0.6s ease;
 }
 
-.active,
+
 .dot:hover {
   background-color: var(--decoration-color);
 }
 
 .dots {
+  
   text-align: center;
   margin-top: 15px;
+
 }
