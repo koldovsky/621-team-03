@@ -51,3 +51,7 @@ p {
 .undertitle-content {
     color: var(--secondary-text-color);
 }
+
+.hidden-scroll {
+    overflow: hidden;
+}

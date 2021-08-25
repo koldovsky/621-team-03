@@ -1,74 +1,11 @@
 (function () {
-  const productsJson = `[
-        {
-            "id": "001",
-            "name": "Grey sofa",
-            "price": 1200.00,
-            "imgUrl": "img/sofa-1.png"
-        },
-        {
-            "id": "002",
-            "name": "Dark grey sofa",
-            "price": 1350.00,
-            "imgUrl": "img/sofa-2.png"
-        },
-        {
-            "id": "003",
-            "name": "Dark grey sofa",
-            "price": 1350.00,
-            "imgUrl": "img/sofa-3.png"
-        },
-        {
-            "id": "004",
-            "name": "Black table",
-            "price": 230.00,
-            "imgUrl": "img/table-1.png"
-        },
-        {
-            "id": "005",
-            "name": "Wood table",
-            "price": 450.00,
-            "imgUrl": "img/table-2.png"
-        },
-        {
-            "id": "006",
-            "name": "Wood sideboard",
-            "price": 1320.00,
-            "imgUrl": "img/sideboard-1.png"
-        },
-        {
-            "id": "007",
-            "name": "Grey sideboard",
-            "price": 1200.00,
-            "imgUrl": "img/sideboard-2.png"
-        },
-        {
-            "id": "008",
-            "name": "Black sideboard",
-            "price": 1200.00,
-            "imgUrl": "img/sideboard-3.png"
-        },
-        {
-            "id": "009",
-            "name": "Grey beanbag",
-            "price": 260.00,
-            "imgUrl": "img/beanbag-1.png"
-        },
-        {
-            "id": "010",
-            "name": "Fur white beanbag",
-            "price": 390.00,
-            "imgUrl": "img/beanbag-2.png"
-        },
-        {
-            "id": "011",
-            "name": "Dark grey beanbag",
-            "price": 380.00,
-            "imgUrl": "img/beanbag-3.png"
-        }
-    ]`;
-
-  const products = JSON.parse(productsJson);
+  let products;
+  fetch('products.json') 
+   .then( response => response.json() )
+   .then( productsData => {
+       products = productsData;
+       showProducts(products);
+   });
 
   let productsHtml = [];
   function showProducts(products) {
@@ -85,12 +22,11 @@
     }
     return productsHtml;
   }
-  showProducts(products);
+
 
   const slidesProducts = [...productsHtml];
   let currentSlideIdx = 0;
   function showCurrentProductSlide() {
-    console.log(window.innerWidth);
     if (window.innerWidth < 700) {
       let slideContainer = document.querySelector(".carousel-inner");
       slideContainer.innerHTML = slidesProducts[currentSlideIdx];
