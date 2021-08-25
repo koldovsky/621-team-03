@@ -343,7 +343,7 @@ footer div.created-by p {
 }
 
 
-.dot:hover {
+.active-dot, .dot:hover {
   background-color: var(--decoration-color);
 }
 
