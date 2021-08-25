@@ -8,10 +8,12 @@
                 if(j!==i){
                     accordions[j].classList.remove("active");
                     accordions[j].nextElementSibling.style.maxHeight = null;
+                    accordions[j].nextElementSibling.style.margin = 0 + "px";
                 }
             }
             if (panel.style.maxHeight){
                 panel.style.maxHeight = null;
+                panel.style.margin = 0 + "px "  ;
               } else {
                 panel.style.maxHeight = panel.scrollHeight + "px";
                 panel.style.margin = 20 + "px " + 0 + "px" ;
