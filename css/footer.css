@@ -27,6 +27,10 @@ main div.customer-reviews .decoration-line {
   justify-content: space-between;
   margin: 20px 0;
 }
+
+.carousel-review-size{
+  height: 250px;
+}
 .s-carousel-arrow-review {
   cursor: pointer;
   width: 32px;
@@ -59,6 +63,9 @@ main div.customer-reviews .customer-reviews-undertitle {
 @media (min-width: 765px) {
   main div.customer-reviews h2 {
     font-size: 2.5625rem;
+  }
+  .carousel-review-size{
+    height: 110px;
   }
 }
 
@@ -341,6 +348,8 @@ footer div.created-by p {
 }
 
 .dots {
+  
   text-align: center;
   margin-top: 15px;
+
 }
