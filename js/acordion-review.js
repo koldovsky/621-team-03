@@ -7,14 +7,15 @@
             for(let j = 0; j <accordions.length; j++){
                 if(j!==i){
                     accordions[j].classList.remove("active");
-                    accordions[j].nextElementSibling.style.display = "none";
+                    accordions[j].nextElementSibling.style.maxHeight = null;
                 }
             }
-            if (panel.style.display === "block") {
-                panel.style.display = "none";
-            } else {
-                panel.style.display = "block";
-            }
+            if (panel.style.maxHeight){
+                panel.style.maxHeight = null;
+              } else {
+                panel.style.maxHeight = panel.scrollHeight + "px";
+                panel.style.margin = 20 + "px " + 0 + "px" ;
+              } 
         });
     }
 })();

@@ -95,10 +95,12 @@ main div.faq-info > h2 {
   justify-content: space-between;
 }
 .panel {
-  padding-bottom: 20px;
+
+  padding:0 18x;
   background-color: rgba(255, 255, 255, 0);
-  display: none;
+  max-height: 0;
   overflow: hidden;
+  transition: max-height 0.2s ease-out;
 }
 .accordion:after {
   content: "\02795"; 
