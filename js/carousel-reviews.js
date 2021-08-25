@@ -54,7 +54,7 @@
     currentReviewSlideIdx = idx;
     showCurrentReviewSlide();
   }
-  setInterval(nextReviewSlide, 10000);
+
   showCurrentReviewSlide();
 
   document
@@ -78,4 +78,23 @@
     );
   }
   generateDots();
+  function activeDots(){
+    const dotsArr = document.getElementsByClassName("dot");
+    for(let i = 0;i < dotsArr.length; i++ ){
+      if(i===currentReviewSlideIdx){
+        dotsArr[i].classList.add("active-dot");
+      }else{
+        dotsArr[i].classList.remove("active-dot")
+      }
+    }
+    
+  }
+  function abc(){
+    console.log("1 second" + currentReviewSlideIdx)
+    activeDots();
+    
+  }
+setInterval(abc,1000)
+ 
+
 })();
