@@ -72,7 +72,6 @@
     }
 
     const dots = document.querySelectorAll(".dot");
-    console.log(dots);
     dots.forEach((button, idx) =>
       button.addEventListener("click", () => dotsClick(idx))
     );
@@ -89,12 +88,8 @@
     }
     
   }
-  function abc(){
-    console.log("1 second" + currentReviewSlideIdx)
-    activeDots();
-    
-  }
-setInterval(abc,1000)
+
+setInterval(activeDots,1000)
  
 
 })();
