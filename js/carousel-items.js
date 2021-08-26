@@ -90,7 +90,7 @@
     function previousThingSlide() {
         currentThingSlideIdx--;
         if (currentThingSlideIdx < 0)
-            currentThingSlideIdx = slidesThings.length - 1;
+            currentThingSlideIdx = slidesThings.length - 3;
         showCurrentThingSlide();
     }
     setInterval(nextThingSlide, 7000);
@@ -101,6 +101,6 @@
         .addEventListener("click", nextThingSlide);
 
     document
-        .querySelector(".carousel-items .back-click")
+        .querySelector(".carousel-items .previous-click")
         .addEventListener("click", previousThingSlide);
 })();
