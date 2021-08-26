@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@1,400;1,500;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --basic-color: rgb(38, 30, 28);
+    --decoration-color: #C8693A;
+    --text-color: #FFFFFF;
+    --secondary-text-color: #898082;
+    --top-container-color: rgba(0, 0, 0, 0.5);
+    --footer-background-color: #1b1613;
+    --title-font: 'Prata', serif;
+    --paragraph-font: 'Rubik', sans-serif;
+    --decoration-font: 'Great Vibes';
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--basic-color);
+}
+
