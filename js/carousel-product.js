@@ -1,17 +1,16 @@
 (function () {
-  let products;
+  let productSlides;
   fetch('products.json') 
    .then( response => response.json() )
-   .then( productsData => {
-       products = productsData;
-       showProducts(products);
+   .then( products => {
+       productSlides = prepareProductSlides(products);
+       showCurrentProductSlide();
    });
 
-  let productsHtml = [];
-  function showProducts(products) {
-    const allProducts = [...products];
-    for (const product of allProducts) {
-      productsHtml.push(`
+  function prepareProductSlides(products) {
+    const productSlides = [];
+    for (const product of products) {
+      productSlides.push(`
           <div class="carousel-item">
           <a href="product.html" class="carousel-image-link"><img src="${product.imgUrl}" class="carousel-img-s-cards" alt="${product.name}"></a>
           <h4 class="s-carousel-text">${product.name}</h4>
@@ -20,33 +19,31 @@
           </div>
           `);
     }
-    return productsHtml;
+    return productSlides;
   }
 
-
   let currentSlideIdx = 0;
-  const slidesProducts = [...productsHtml];
   function showCurrentProductSlide() {
     if (window.innerWidth < 700) {
       let slideContainer = document.querySelector(".carousel-inner");
-      slideContainer.innerHTML = slidesProducts[currentSlideIdx];
+      slideContainer.innerHTML = productSlides[currentSlideIdx];
     } else {
       let slideContainer = document.querySelector(".carousel-inner");
       slideContainer.innerHTML =
-        slidesProducts[currentSlideIdx] +
-        slidesProducts[currentSlideIdx + 1] +
-        slidesProducts[currentSlideIdx + 2];
+        productSlides[currentSlideIdx] +
+        productSlides[currentSlideIdx + 1] +
+        productSlides[currentSlideIdx + 2];
     }
   }
 
   function nextProductSlide() {
     if (window.innerWidth < 700) {
       currentSlideIdx++;
-      if (currentSlideIdx >= slidesProducts.length) currentSlideIdx = 0;
+      if (currentSlideIdx >= productSlides.length) currentSlideIdx = 0;
       showCurrentProductSlide();
     } else {
       currentSlideIdx += 3;
-      if (currentSlideIdx >= slidesProducts.length - 3) currentSlideIdx = 0;
+      if (currentSlideIdx >= productSlides.length - 3) currentSlideIdx = 0;
       showCurrentProductSlide();
     }
   }
@@ -54,16 +51,15 @@
   function previousProductSlide() {
     currentSlideIdx--;
     if (window.innerWidth < 700) {
-      if (currentSlideIdx < 0) currentSlideIdx = slidesProducts.length - 1;
+      if (currentSlideIdx < 0) currentSlideIdx = productSlides.length - 1;
       showCurrentProductSlide();
     } else {
-      if (currentSlideIdx <= 3) currentSlideIdx = slidesProducts.length - 3;
+      if (currentSlideIdx <= 3) currentSlideIdx = productSlides.length - 3;
       showCurrentProductSlide();
     }
   }
 
   setInterval(nextProductSlide, 5000);
-  showCurrentProductSlide();
 
   window.addEventListener("resize", showCurrentProductSlide);
 
