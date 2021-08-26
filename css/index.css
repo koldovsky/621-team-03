@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@1,400;1,500;1,700&display=swap');
 
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-
 }
 
 :root {

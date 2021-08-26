@@ -1,33 +1,18 @@
-(function () {
-    
-    const menuTop = document.querySelector('.menu-top');
-    const burgerIcon = document.querySelector('.openMenu');
-    function showBurgerControls() {
-        if (window.innerWidth < 700) {
-            burgerIcon.style.display = 'block';
-            menuTop.style.display = 'none';
-        } else {
-            burgerIcon.style.display = 'none';
-            menuTop.style.display = 'block';
-        }
-    }
-    window.addEventListener('resize', showBurgerControls);
-    showBurgerControls();
+const openMenuButton = document.querySelector('.openMenu');
+const closeMenuButton = document.querySelector('.closeMenu');
+const mainMenu = document.querySelector('.header-nav');
 
+openMenuButton.addEventListener('click', showMenu);
+closeMenuButton.addEventListener('click', closeMenu);
 
-const mainMenu = document.querySelector('.nav_menu');
-const closeMenu = document.querySelector('.closeMenu');
-const openMenu = document.querySelector('.openMenu');
-
-openMenu.addEventListener('click', show);
-closeMenu.addEventListener('click', close);
-
-function show(){
-    mainMenu.style.display = 'flex';
-    mainMenu.style.top = '0';
+function showMenu(){
+    openMenuButton.style.display = 'none';
+    closeMenuButton.style.display = 'block';
+    mainMenu.style.display = 'block';
 }
-function close(){
-    mainMenu.style.top = '-100%';
-}
-})();
 
+function closeMenu(){
+    openMenuButton.style.display = 'block';
+    closeMenuButton.style.display = 'none';
+    mainMenu.style.display = 'none';
+}
