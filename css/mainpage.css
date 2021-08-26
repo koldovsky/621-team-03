@@ -130,7 +130,6 @@ header {
     width: 26px;
     height: 26px;
     display: block;
-    border: 1px solid var(--decoration-color);
 }
 
 .name-company {
@@ -138,7 +137,7 @@ header {
     font-family: Prata, serif;
     font-size: 32px;
     box-sizing: border-box;
-    color: var(--text-color);
+    color: var(--text-color)!important;
     text-decoration: none;
     text-align: center;
 }
