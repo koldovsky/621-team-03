@@ -90,7 +90,7 @@
     function previousThingSlide() {
         currentThingSlideIdx--;
         if (currentThingSlideIdx < 0)
-            currentThingSlideIdx = slidesThings.length - 3;
+            currentThingSlideIdx = slidesThings.length - 1;
         showCurrentThingSlide();
     }
     setInterval(nextThingSlide, 7000);
