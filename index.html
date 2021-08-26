@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Loft Style Design</title>
     <link rel="icon" href="img/favicon.ico">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
     <link rel="stylesheet" href="css/controls.css">
     <link rel="stylesheet" href="css/ad-cards.css">
     <link rel="stylesheet" href="css/discover-furniture.css">
@@ -20,60 +20,65 @@
     <link rel="stylesheet" href="css/shop-cart-icon.css">
     <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" herf="css/carousel-items">
-
+    <link rel="stylesheet" href="css/carousel-items">
+</head>    
 <body class="hidden-scroll">
-    <header id="aboutus">
-        <nav>
-
-            <div class="container container-top">
-                <div class="logo"><a href="index.html" class="name-company">Loft Style Desing</a></div>
-                <div class="openMenu"><i class="fas fa-bars"></i></div>
-                <!-- <div class="closeMenu"><i class="fas fa-times-circle"></i></div> -->
-
+        <header>
+        <div class="header-logo">
+            <a href="index.html" class="name-company">Loft Style Desing</a>
+        </div>
+        <div class="header-mobile">
+            <div class="burger openMenu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
             </div>
-            <div class="nav_menu menu-top">
-
-
-                <a href="#bestideas" class="mainmenu">Best Deals</a>
-                <a href="#history" class="mainmenu">History</a>
-                <a href="#aboutus" class="mainmenu">About Us</a>
-                <a href="shop.html" class="mainmenu">Shop</a>
-                <a href="#contacts" class="mainmenu">Contact Us</a>
-                <div class="mainmenu clock"></div>
+            <div class="close-menu closeMenu">
+                <span class="burger-line"></span>
+                <span class="burger-line"></span>
             </div>
-            <div class="social-icons-top">
-                <a href="https://facebook.com/" target="_blank" class="socialicons-view"><img
-                        src="img/facebook-icon.svg" width="26" alt="Facebook Icon"></a>
-                <a href="https://instagram.com/" target="_blank" class="socialicons-view"><img
-                        src="img/instagram-icon.svg" width="26" alt="Instagram Icon"></a>
-                <a href="https://youtube.com/" target="_blank" class="socialicons-view"><img src="img/youtube-icon.svg"
-                        width="26" alt="Youtube Icon"></a>
+        </div>
+        <div class="header-nav">
+            <nav class="menu">
+                <ul class="menu-list">
+                    <li><a href="#">Best Deals</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="shop.html">Shop</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <div class="mainmenu clock"></div>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <ul class="social-icons-list">
+                    <li><a href="https://facebook.com/" target="_blank" class="socialicons-view"><img
+                        src="img/facebook-icon.svg" width="26" alt="Facebook Icon"></a></li>
+                    <li><a href="https://instagram.com/" target="_blank" class="socialicons-view"><img
+                        src="img/instagram-icon.svg" width="26" alt="Instagram Icon"></a></li>
+                    <li><a href="https://youtube.com/" target="_blank" class="socialicons-view"><img src="img/youtube-icon.svg"
+                        width="26" alt="Youtube Icon"></a></li>
+                </ul>
             </div>
-            <!-- </div> -->
+        </div>
+    </header>
 
-        </nav>
-
-
-        <div class="mainbanner">
-            <div class="empty-container-ban"></div>
-            <div class="banner">
+        
+    <main>
+        <section class="loft-design">
+            <div class="container">
                 <p class="textdecor txt-decor-mp">Tailored furniture collections</p>
                 <h1 class="main-title-name">Loft Furniture</h1>
                 <div class="decor-line"></div>
                 <p class="text-content">Interior design and furnishing solutions that deliver results, by focussing upon
                     the well-being of residents.</p>
                 <div class="buttons-container">
-                    <a href="#shopnow" class="button button-buy">Shop Now</a>
-                    <a href="#learnmore" class="button button-info">Learn More</a>
+                    <a class="button button-buy" href="shop.html">Shop now</a>
+                    <a class="button button-info" href="#">Learn more</a>
                 </div>
             </div>
-        </div>
+        </section>
+    
 
-    </header>
-
-
-    <main>
         <div class="background-ad-cards container"></div>
         <div class="ad-cards">
             <div class="living-room-cards">
@@ -527,13 +532,12 @@
             </div>
         </div>
     </div>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
     <script src="js/popup.js"></script>
     <script src="js/carousel-product.js"></script>
     
     <script src="js/clock.js"></script>
     <script src="js/burger.js"></script>
-    <script src="https://kit.fontawesome.com/cb5e6ad33a.js" crossorigin="anonymous"></script>
     <script src="js/carousel-items.js"></script>
     <script src="js/acordion-review.js"></script>
     <script src="js/carousel-reviews.js"></script>
