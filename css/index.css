@@ -71,9 +71,9 @@ p {
     padding: 15px; 
     border-radius: 50px; 
     font-size: 18px; 
+    opacity: .5;
   }
   
   #myBtn:hover {
-    background-color: white; 
-    color: var(--decoration-color);
+    opacity: .8;
   }
