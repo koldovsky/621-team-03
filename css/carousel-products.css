@@ -2,7 +2,7 @@
   display: flex;
 }
 
-.carousel-item {
+.carousel-item-s {
   display: flex;
   flex-direction: column;
   justify-content: center;

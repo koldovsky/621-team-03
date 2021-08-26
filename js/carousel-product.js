@@ -11,7 +11,7 @@
     const productSlides = [];
     for (const product of products) {
       productSlides.push(`
-          <div class="carousel-item">
+          <div class="carousel-item-s">
           <a href="product.html" class="carousel-image-link"><img src="${product.imgUrl}" class="carousel-img-s-cards" alt="${product.name}"></a>
           <h4 class="s-carousel-text">${product.name}</h4>
           <p class="s-carousel-product-price">${product.price} USD</p>
@@ -59,7 +59,7 @@
     }
   }
 
-  setInterval(nextProductSlide, 5000);
+  // setInterval(nextProductSlide, 5000);
 
   window.addEventListener("resize", showCurrentProductSlide);
 
