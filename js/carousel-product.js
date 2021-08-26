@@ -24,8 +24,8 @@
   }
 
 
-  const slidesProducts = [...productsHtml];
   let currentSlideIdx = 0;
+  const slidesProducts = [...productsHtml];
   function showCurrentProductSlide() {
     if (window.innerWidth < 700) {
       let slideContainer = document.querySelector(".carousel-inner");
