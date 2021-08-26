@@ -59,7 +59,7 @@
         for (const thing of allFurnitureThings) {
             furnitureThingsHtml.push(`
           <div class="carousel-item">
-          <a class="carousel-image-thing"><img src="${thing.imgUrl}" class="carousel-img-s-cards" alt="${thing.name}"></a>
+          <a href="itemlist.html" class="carousel-image-thing"><img src="${thing.imgUrl}" class="carousel-img-s-cards" alt="${thing.name}"></a>
           <h4 class="s-carousel-text">${thing.name}</h4>
           <p class="s-carousel-product-price">${thing.price} USD</p>
           <button name="add-to-cart-button" class="button button-buy">Add to cart</button>
@@ -97,10 +97,10 @@
     showCurrentThingSlide();
 
     document
-        .querySelector(".right-click")
+        .querySelector(".carousel-items .next-click")
         .addEventListener("click", nextThingSlide);
 
     document
-        .querySelector(".left-click")
+        .querySelector(".carousel-items .back-click")
         .addEventListener("click", previousThingSlide);
 })();
