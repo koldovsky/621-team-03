@@ -29,7 +29,7 @@ class Cart {
         const product = await this.productService.getProductById(id);
         total += product.price * this.cart[id];
         cartDomSting += `<div class="row" data-id="${id}"> 
-                      <div class="col-5">${product.title}</div>
+                      <div class="col-5">${product.name}</div>
                       <div class="col-3">${product.price}</div>
                       <div class="col-2">${this.cart[id]}</div>
                       <div class="col-1"><button data-id=${id} class="btn btn-sm plus">+</button></div>

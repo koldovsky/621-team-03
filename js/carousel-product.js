@@ -7,6 +7,10 @@
        showCurrentProductSlide();
    });
 
+
+
+   
+
   function prepareProductSlides(products) {
     const productSlides = [];
     for (const product of products) {
@@ -59,7 +63,7 @@
     }
   }
 
-  // setInterval(nextProductSlide, 5000);
+  setInterval(nextProductSlide, 5000);
 
   window.addEventListener("resize", showCurrentProductSlide);
 
