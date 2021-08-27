@@ -206,3 +206,7 @@ nav > ul > li a:hover {
 div.buttons-container {
     padding: 30px 0;
 } 
+
+.clock {
+    color: var(--decoration-color);
+}

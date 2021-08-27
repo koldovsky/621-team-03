@@ -101,6 +101,6 @@
         .addEventListener("click", nextThingSlide);
 
     document
-        .querySelector(".carousel-items .back-click")
+        .querySelector(".carousel-items .previous-click")
         .addEventListener("click", previousThingSlide);
 })();

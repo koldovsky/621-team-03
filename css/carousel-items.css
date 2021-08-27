@@ -1,11 +1,21 @@
-.s-carousel-main {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    margin: auto 0;
-    border: 0;
-    padding: 0;
-    background-color: var(--basic-color);
-    border-color: var(--basic-color);
-    ;
+.carousel-items  {
+   display: flex;
+   justify-content: center;
+   padding-bottom: 70px;
+   padding-top: 50px;
 }
+
+.furniture-items-carousel {
+   margin-left: 58px;
+}
+
+.s-carousel-main {
+   width: 32px;
+   height: 32px;
+   margin-top: 130px;
+   background-color: var(--basic-color);
+   border-color: var(--basic-color);
+   border: 0;
+   padding: 0;
+}
+
