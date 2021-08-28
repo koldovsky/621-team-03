@@ -188,6 +188,11 @@ body > header > div.header-nav > nav > ul > li > a:focus::after {
   transform: translate3d(0, 0.2em, 0);
   transform: scale(1);
 }
+@media (max-width:767px) {
+    body > header > div.header-nav > nav > ul > li > a::after {
+        display: none;
+    } 
+}
 
 
 .container {
