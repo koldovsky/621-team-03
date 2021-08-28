@@ -1,8 +1,8 @@
 .ad-cards {
     background-color: #261e1c;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 25px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 10px;
     align-self: end;
     margin: 30px auto;
     height: 80%;
@@ -20,11 +20,27 @@
   background-color:#261e1c;
  }
 
+@media (min-width: 768px) {
+  .ad-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 10px;
+}
+}
+
+@media (min-width: 992px) {
+  .ad-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 10px;
+}
+}
+
  .living-room-cards {
      background-image: url(../img/living-room.jpg);
      background-position: center;
      background-size: cover;
-     min-height: 100%;
+     min-height: 80%;
      text-align: left;
      padding: 25px;
 }
@@ -33,7 +49,7 @@
     background-image: url(../img/loft-collect.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 100%;
+    min-height: 80%;
     text-align: left;
     padding: 25px;
  }
@@ -42,7 +58,7 @@
     background-image: url(../img/loft-office.jpg.jpg);
     background-position: center;
     background-size: cover;
-    min-height: 100%;
+    min-height: 80%;
     text-align: left;
     padding: 25px;
   }
@@ -55,9 +71,14 @@
 }
 
   .about-loft-style-design{
-      height: 600px;
-      display: flex;
-      flex-direction: row;
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+}
+
+.about-loft-style-loft-bedroom {
+  width: 100%;
 }
 
   .abbreviated-text-card {
@@ -71,9 +92,24 @@
   }
   .info-text-block {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
       grid-gap: 15px;
       padding: 15px;
   }
 
-      
+@media (min-width: 768px) {
+  .info-text-block {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 15px;
+      padding: 15px;
+  }
+}
+@media (min-width: 992px) {
+  .about-loft-style-design{
+      height: 600px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 10px;
+  }
+}      

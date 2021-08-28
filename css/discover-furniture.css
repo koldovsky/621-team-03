@@ -2,7 +2,7 @@
     height: 2px;
     width: 25%;
     background-color: #c8693a;
-    margin: 0 auto;
+    margin: 10px auto;
 }
 
 section.info-buy {
@@ -31,7 +31,6 @@ section.info-buy {
 
 
 p.info-buy-title.textdecor {
-    /* margin-top: 180px; */
     font-size: 15px;
     text-align: center;
     flex: 1;
@@ -51,11 +50,11 @@ p.info-buy-title.textdecor {
     flex: 1;
 }
 
-
 @media (min-width: 500px) {
     p.info-buy-title.textdecor {
         font-size: 20px; 
     }
+
     .info-text-content {
         font-size: 58px;
     }
@@ -65,17 +64,10 @@ p.info-buy-title.textdecor {
     } 
 }
 
-/* @media (min-width: 980px) {
-    p.info-buy-title.textdecor {
-        
-        
-    }
-} */
-
 section.best-ideas {
     top: 0;
     left: 0;
-    height: 100%;
+    height: 50vh;
 }
 
 .best-ideas-container {
@@ -84,7 +76,7 @@ section.best-ideas {
     height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: center;
     align-items: center;
     text-align: center;
     padding: 10% 10%;

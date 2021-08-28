@@ -23,7 +23,7 @@ class ProductList {
           <a href="product.html" class="carousel-image-link"><img src="${product.imgUrl}" class="carousel-img-s-cards" alt="${product.name}"></a>
           <h4 class="s-carousel-text">${product.name}</h4>
           <p class="s-carousel-product-price">${product.price} USD</p>
-          <button name="add-to-cart-button" class="button button-buy" data-bs-target="#modal-cart" data-id="${product.id}">Add to cart</button>
+          <button name="add-to-cart-button" class="button button-buy" data-id="${product.id}">Add to cart</button>
           </div>
           `); 
     });
