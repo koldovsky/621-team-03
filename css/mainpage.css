@@ -64,8 +64,12 @@ header {
     height: 2px;
     background-color: #FFF;
     margin-bottom: 5px;
-    
 }
+body > header > div.header-mobile > div.burger.openMenu:hover {
+    transform: scale(1.3);
+    transition: .2s;
+}
+
 .close-menu {
     display: none;
 }
@@ -79,8 +83,11 @@ header {
 .close-menu .burger-line:last-child {
     transform: rotate(-45deg);
 }
-      
 
+.close-menu:hover {
+    transform: scale(1.3);
+    transition: .2s; 
+}
 
 .menu-list {
     display: block;
@@ -114,6 +121,11 @@ header {
     justify-content: center;
     list-style-type: none;
     padding: 0;
+}
+
+body > header > div.header-nav > div > ul > li > a:hover {
+    transform: scale(1.2);
+    transition: .3s;
 }
 
 .social-icons-list li {
@@ -151,6 +163,32 @@ header {
 nav > ul > li a:hover {
     color: var(--decoration-color);
 }
+
+body > header > div.header-nav > nav > ul > li > a {
+    display: block;
+  position: relative;
+  padding: 0.2em 0;
+}
+body > header > div.header-nav > nav > ul > li > a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0.1em;
+  background-color: var(--decoration-color);
+  opacity: 0;
+  transition: opacity .3s, transform .3s;
+  transform: scale(0);
+  transform-origin: center;
+}
+body > header > div.header-nav > nav > ul > li > a:hover::after, 
+body > header > div.header-nav > nav > ul > li > a:focus::after {
+  opacity: 1;
+  transform: translate3d(0, 0.2em, 0);
+  transform: scale(1);
+}
+
 
 .container {
     max-width: 1200px;
