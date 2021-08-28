@@ -5,8 +5,12 @@ class ProductList {
       this.productService = new ProductsService();
       this.productService
         .getProducts()
-        .then(() => this.prepareProductSlides())
-        .then(() => this.addEventListeners());        
+        .then(async () => {
+          await this.prepareProductSlides();
+          this.showCurrentProductSlide();
+          this.startSlideShow();
+          this.addEventListeners(); 
+        })       
   }
 
   async prepareProductSlides() {
@@ -22,20 +26,20 @@ class ProductList {
           </div>
           `); 
     });
-    return productSlides;
+    this.productSlides = productSlides;
   }
 
-  async showCurrentProductSlide() {
+  showCurrentProductSlide() {
     let currentSlideIdx = 0;
     if (window.innerWidth < 700) {
       let slideContainer = document.querySelector(".carousel-inner");
-      slideContainer.innerHTML = await productSlides[currentSlideIdx];
+      slideContainer.innerHTML = this.productSlides[currentSlideIdx];
     } else {
       let slideContainer = document.querySelector(".carousel-inner");
       slideContainer.innerHTML =
-        (await productSlides[currentSlideIdx]) +
-        (await productSlides[currentSlideIdx + 1]) +
-        (await productSlides[currentSlideIdx + 2]);
+        (this.productSlides[currentSlideIdx]) +
+        (this.productSlides[currentSlideIdx + 1]) +
+        (this.productSlides[currentSlideIdx + 2]);
     }
   }
 
@@ -62,11 +66,13 @@ class ProductList {
     }
   }
 
-  
-  async addEventListeners() {
-    setInterval(nextProductSlide, 5000);
+  startSlideShow() {
+    setInterval(this.nextProductSlide, 5000);
+  }
 
-    window.addEventListener("resize", showCurrentProductSlide);
+  async addEventListeners() {
+
+    window.addEventListener("resize", () => this.showCurrentProductSlide());
     
     document
         .querySelectorAll('.button-buy')
@@ -78,11 +84,11 @@ class ProductList {
 
     document
       .querySelector(".move-slide-right")
-      .addEventListener("click", nextProductSlide);
+      .addEventListener("click", () => this.nextProductSlide());
 
     document
       .querySelector(".move-slide-left")
-      .addEventListener("click", previousProductSlide);
+      .addEventListener("click", () => this.previousProductSlide);
   }
 
   handleProductBuyClick(event) {
