@@ -72,6 +72,7 @@ body {
 .footer {
     position: fixed;
     bottom: 0;
+    left: 0;
     width: 100%;
 }
 
@@ -89,4 +90,54 @@ body {
 .decoration-loza {
     display: inline-flex;
     align-items: center;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: var(--decoration-color);
+}
+
+.header-container {
+    max-width: 1200px;
+    margin: 0px auto;
+    display: flex;
+    padding: 0px 30px;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 70px;
+}
+
+.header-logo {
+    font-weight: bold;
+    font-family: Prata, serif;
+    font-size: 32px;
+    box-sizing: border-box;
+    color: var(--text-color);
+    text-decoration: none;
+    position: relative;
+    z-index: 5;
+}
+
+.menu-list>li {
+    position: relative;
+    margin-left: 20px;
+}
+
+.menu-link {
+    color: var(--text-color);
+    font-size: 20px;
+}
+
+@media (min-width: 767px) {
+    .menu-list {
+        display: flex;
+        align-items: center;
+    }
+    .menu-list>li {
+        padding: 10px 0;
+    }
 }
