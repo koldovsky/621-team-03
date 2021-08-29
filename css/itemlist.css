@@ -68,3 +68,25 @@ body {
 .map {
     margin-left: 20px;
 }
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.decoration-1 {
+    height: 2px;
+    width: 687px;
+    background-color: var(--decoration-color);
+}
+
+.decor {
+    display: inline-flex;
+    margin-bottom: 10px;
+}
+
+.decoration-loza {
+    display: inline-flex;
+    align-items: center;
+}
