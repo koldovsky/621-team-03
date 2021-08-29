@@ -7,6 +7,17 @@
     font-family: 'Rubik', sans-serif;
 }
 
+.button-popup-controls {
+    background-color: var(--decoration-color);
+    color: var(--text-color);
+    border: 0px;
+}
+
+.button-popup-controls:hover {
+    color: var(--footer-background-color);
+    opacity: 0.8;
+}
+
 .button-buy {
     background-color: #C8693A;
     color: #fff;

@@ -1,16 +1,14 @@
 class ProductList {
   constructor(cart) {
-      this.cart = cart;
-      this.container = document.querySelector(".carousel-inner");
-      this.productService = new ProductsService();
-      this.productService
-        .getProducts()
-        .then(async () => {
-          await this.prepareProductSlides();
-          this.showCurrentProductSlide();
-          this.startSlideShow();
-          this.addEventListeners(); 
-        })       
+    this.cart = cart;
+    this.container = document.querySelector(".carousel-inner");
+    this.productService = new ProductsService();
+    this.productService.getProducts().then(async () => {
+      await this.prepareProductSlides();
+      this.showCurrentProductSlide();
+      this.startSlideShow();
+      this.addEventListeners();
+    });
   }
 
   async prepareProductSlides() {
@@ -23,9 +21,9 @@ class ProductList {
           <a href="product.html" class="carousel-image-link"><img src="${product.imgUrl}" class="carousel-img-s-cards" alt="${product.name}"></a>
           <h4 class="s-carousel-text">${product.name}</h4>
           <p class="s-carousel-product-price">${product.price} USD</p>
-          <button name="add-to-cart-button" class="button button-buy" data-id="${product.id}">Add to cart</button>
+          <button name="add-to-cart-button" class="button button-buy" data-bs-target="#modal-cart" data-id="${product.id}">Add to cart</button>
           </div>
-          `); 
+          `);
     });
     this.productSlides = productSlides;
     this.currentSlideIdx = currentSlideIdx;
@@ -42,6 +40,7 @@ class ProductList {
         this.productSlides[this.currentSlideIdx + 1] +
         this.productSlides[this.currentSlideIdx + 2];
     }
+    this.addBuyListeners(".carousel-inner .button-buy");
   }
 
   async nextProductSlide() {
@@ -75,17 +74,18 @@ class ProductList {
     setInterval(() => this.nextProductSlide(), 5000);
   }
 
-  async addEventListeners() {
-
-    window.addEventListener("resize", () => this.showCurrentProductSlide());
-    
+  addBuyListeners(selector) {
     document
-        .querySelectorAll('.button-buy')
-        .forEach(button =>
-          button.addEventListener('click', event =>
-            this.handleProductBuyClick(event)
-          )
-        );
+      .querySelectorAll(selector)
+      .forEach((button) =>
+        button.addEventListener("click", (event) =>
+          this.handleProductBuyClick(event)
+        )
+      );
+  }
+
+  async addEventListeners() {
+    window.addEventListener("resize", () => this.showCurrentProductSlide());
 
     document
       .querySelector(".move-slide-right")
@@ -100,7 +100,6 @@ class ProductList {
     const button = event.target;
     const id = button.dataset.id;
     this.cart.addProduct(id);
-    window.showAlert('Product added to cart');
+    window.showAlert("Product added to cart");
   }
-
-}  
+}
