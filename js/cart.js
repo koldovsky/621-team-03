@@ -83,17 +83,10 @@ class Cart {
     async updateBadge() {
       const {count, cost } = await this.cartLengthAndCost(); 
       document.querySelector('#cart-badge').innerText = `${count} $${cost.toFixed(2)}`;
-      if (count === 0) {
-        document.querySelector("#navbarNav > div").classList.add('d-none'); 
-      } else {
-        document.querySelector("#navbarNav > div").classList.remove('d-none'); 
-      }
     }
     async cartLengthAndCost() {
-      // return Object.keys(this.cart).length;
       let count = 0;
       let cost = 0;
-      // const productService = new ProductsService();
       for (const key in this.cart) {
           const product = await this.productService.getProductById(key);
           const quantity = this.cart[key]; 
