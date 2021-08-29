@@ -19,8 +19,8 @@
 }
 
 .button-buy {
-    background-color: #C8693A;
-    color: #fff;
+    background-color: var(--decoration-color);
+    color: var(--text-color);
 }
 
 .button-buy:hover {
@@ -28,13 +28,13 @@
 }
 
 .button-info {
-    color: #fff;
+    color: var(--text-color);
     background-color: transparent;
     border: 3px solid #fff;
 }
 
 .button-info:hover {
-    background-color: #fff;
+    background-color: var(--text-color);
     color: rgb(27, 22, 19);
 }
 

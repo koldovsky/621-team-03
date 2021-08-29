@@ -6,7 +6,7 @@
     position: fixed;
 }
 
-.backgroun-shop-cart-wrapper{
+.backgroun-shop-cart-wrapper {
     background-color: var(--text-color);
     border-radius: 50%;
     width: 50px;
@@ -34,7 +34,7 @@
         right: 3%;
     }
     
-    .backgroun-shop-cart-wrapper{
+    .backgroun-shop-cart-wrapper {
         width: 70px;
         height: 70px;
         margin: 5px 5px;
