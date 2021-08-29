@@ -84,9 +84,10 @@ class Cart {
       const {count, cost } = await this.cartLengthAndCost(); 
       document.querySelector('#cart-badge').innerText = `${count} $${cost.toFixed(2)}`;
       if (count === 0) {
-        document.querySelector("#navbarNav > div").classList.add('d-none'); 
+        document.querySelector("icon-shop-cart-inner").classList.add("d-none"); 
       } else {
-        document.querySelector("#navbarNav > div").classList.remove('d-none'); 
+        document
+          .querySelector("icon-shop-cart-inner").classList.remove("d-none"); 
       }
     }
     async cartLengthAndCost() {
