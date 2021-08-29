@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Prata&family=Rubik:ital,wght@1,400;1,500;1,700&display=swap');
-
 * {
     box-sizing: border-box;
     margin: 0;
@@ -23,3 +22,49 @@ body {
     background-color: var(--basic-color);
 }
 
+.decoration {
+    height: 2px;
+    width: 100px;
+    background-color: #c8693a;
+    margin-left: 65px;
+}
+
+.contacts {
+    color: var(--text-color);
+    font-weight: 400;
+    font-family: 'Prata', serif;
+    margin-left: 65px;
+}
+
+.contact-info {
+    text-decoration: none;
+    color: var(--secondary-text-color);
+    font-family: var(--paragraph-font);
+    display: block;
+    padding: 5px 0;
+    margin-left: 65px;
+}
+
+.created {
+    background-color: black;
+    color: var(--text-color);
+    font-size: 18px;
+    line-height: 1.7;
+    font-family: Rubik, sans-serif;
+    font-weight: 400;
+    text-align: center;
+}
+
+.icons {
+    margin-left: 65px;
+}
+
+.footer-items {
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+
+.map {
+    margin-left: 20px;
+}
