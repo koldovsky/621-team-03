@@ -54,3 +54,9 @@
 #cartLabel {
     color: black;
 }
+
+.alert-container {
+    right: 10%; 
+    top: 5%;
+    position: fixed;
+}
