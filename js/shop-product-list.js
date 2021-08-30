@@ -5,7 +5,7 @@ class ProductList {
     this.productService = new ProductsService();
     this.productService.getProducts().then(async () => {
       await this.prepareProducts();
-      this.addBuyListeners();
+      
     });
   }
 
@@ -15,7 +15,7 @@ class ProductList {
     products.forEach((product) => {
       productListDomStr += `
           <div class="s-products-list">
-          <a href="../product.html" class="s-product-image-link"><img src="${product.imgUrl}" class="s-product-img-card" alt="${product.name}"></a>
+          <a href="../itemlist.html" class="s-product-image-link"><img src="${product.imgUrl}" class="s-product-img-card" alt="${product.name}"></a>
           <h4 class="s-product-title">${product.name}</h4>
           <p class="s-product-price">${product.price} USD</p>
           <button name="add-to-cart-button" class="button button-buy shop-btn" data-bs-target="#modal-cart" data-id="${product.id}">Add to cart</button>
@@ -23,6 +23,7 @@ class ProductList {
           `;
     });
     this.container.innerHTML = productListDomStr;
+    this.addBuyListeners(".products-container .button-buy");
   }
 
   addBuyListeners(selector) {

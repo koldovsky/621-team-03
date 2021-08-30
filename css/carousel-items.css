@@ -1,6 +1,13 @@
 .carousel-items {
     display: flex;
     justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+
+.carousel-items-p {
+    display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
 }
