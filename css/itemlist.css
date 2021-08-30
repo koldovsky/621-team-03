@@ -325,3 +325,10 @@
                 .button-click:hover {
                     border: 1px solid var(--text-color);
                 }
+                
+                .around {
+                    border: 2px solid var(--text-color);
+                    padding: 5px;
+                    border-radius: 7px;
+                    text-decoration: none !important;
+                }
