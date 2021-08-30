@@ -292,3 +292,36 @@
                         margin: 20px;
                     }
                 }
+                
+                .enter-name {
+                    color: var(--text-color);
+                    font-weight: 400;
+                    font-family: 'Prata', serif;
+                }
+                
+                .entring-form {
+                    display: flex;
+                    right: 0;
+                    margin-left: 450px;
+                    border: 5px solid var(--decoration-color);
+                    border-radius: 10px;
+                }
+                
+                .form-test {
+                    padding: 20px;
+                    background-color: rgb(200, 105, 58, 0.3)
+                }
+                
+                .button-click {
+                    margin-top: 5px;
+                    border: 1px var(--decoration-color);
+                    background-color: var(--decoration-color);
+                    color: var(--text-color);
+                    width: 60px;
+                    font-family: 'Prata', serif;
+                    border-radius: 3px;
+                }
+                
+                .button-click:hover {
+                    border: 1px solid var(--text-color);
+                }
