@@ -20,3 +20,13 @@
     font-weight: 400;
     text-align: center;
 }
+
+.s-carousel-main {
+    cursor: pointer;
+    width: 32px;
+    height: 32px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0);
+    border-color: rgba(255, 255, 255, 0);
+    padding-bottom: 30px;
+}

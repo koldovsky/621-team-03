@@ -336,6 +336,14 @@
         .carousel-items {
             margin: 50px;
             display: flex;
+            flex-direction: row;
+        }
+        
+        .carousel-items-p {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
         }
         
         .s-carousel-main {
