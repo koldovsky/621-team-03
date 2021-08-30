@@ -23,6 +23,11 @@ header {
         background: var(--top-container-color);
     }
 }
+@media (min-width: 1600px) {
+    header {
+        padding: 20px 100px;
+    }
+}
 
 .header-logo {
     position: relative;
@@ -201,7 +206,7 @@ body > header > div.header-nav > nav > ul > li > a:focus::after {
 
 
 .container {
-    max-width: 1200px;
+    max-width: 1366px;
     margin: 0 auto;
     padding: 0 20px;
 }

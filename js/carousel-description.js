@@ -65,7 +65,7 @@
         const allFurnitureThings = [...furnitureThings];
         for (const thing of allFurnitureThings) {
             furnitureThingsHtml.push(`
-          <div class="carousel-items">
+          <div class="carousel-items-p">
           <a href="itemlist.html" class="carousel-image-thing"><img src="${thing.imgUrl}" class="carousel-img-s-card" alt="${thing.name}"></a>
           <h3 class="s-carousel-text text-positioning">${thing.name}</h3>
           <p class="general-description">${thing.description}</p>
