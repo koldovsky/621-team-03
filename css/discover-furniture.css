@@ -1,7 +1,7 @@
 .orange-line {
     height: 2px;
     width: 25%;
-    background-color: #c8693a;
+    background-color: var(--decoration-color);
     margin: 10px auto;
 }
 

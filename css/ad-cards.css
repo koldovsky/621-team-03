@@ -1,3 +1,10 @@
+.orange-line-iside-text {
+    height: 2px;
+    width: 25%;
+    background-color: var(--decoration-color);
+    margin: 10px 0;
+}
+
 .ad-cards {
     background-color: #261e1c;
     display: grid;
@@ -12,7 +19,7 @@
  .orange-line-center{
     height: 5px;
     width: 50%;
-    background-color: #c8693a;
+    background-color: var(--decoration-color);
     margin: 3% 25% 3% 25%;  
 }
 
