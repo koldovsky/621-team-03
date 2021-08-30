@@ -25,6 +25,7 @@ main div.customer-reviews .decoration-line {
   flex-direction: row;
   justify-content: space-between;
   margin: 20px 0;
+  min-height: 370px;
 }
 
 .carousel-review-size {
@@ -58,8 +59,16 @@ main div.customer-reviews .slide-reviews {
 main div.customer-reviews .customer-reviews-undertitle {
   color: var(--text-color);
 }
+@media (min-width: 402px) {
+  .review-carousel-position {
+    min-height: 280px;
+  }
+}
 
 @media (min-width: 765px) {
+  .review-carousel-position {
+    min-height: 160px;
+  }
   main div.customer-reviews h2 {
     font-size: 2.5625rem;
   }
@@ -193,7 +202,9 @@ main section.join-newsletter-background p:nth-child(3) {
 main section.join-newsletter-background h2 {
   font-size: 1.75rem;
 }
-
+.form-contacts {
+  max-width: 100%;
+}
 main div.join-newsletter {
   display: flex;
   flex-direction: column;
@@ -205,20 +216,27 @@ main div.join-newsletter form {
   align-items: center;
   flex-direction: column;
   min-width: 17.3125rem;
-  max-width: 100%;
+  width: 100%;
 }
 
 main div.join-newsletter form .input-email {
   border-color: #f2efe9;
   background-color: rgba(73, 73, 73, 0.24);
   min-width: 17.3125rem;
-  width: 90%;
+  width: 100%;
   padding: 16px 25px;
   margin: 12px 5px 5px 5px;
   color: var(--decoration-color);
 }
 
 @media (min-width: 765px) {
+  main div.join-newsletter form {
+    width: 30px;
+  }
+  .form-contacts {
+    max-width: 50%;
+    margin-left: 100px;
+  }
   main section.join-newsletter-background h2 {
     font-size: 1.875rem;
   }
