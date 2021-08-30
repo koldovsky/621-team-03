@@ -25,6 +25,7 @@ main div.customer-reviews .decoration-line {
   flex-direction: row;
   justify-content: space-between;
   margin: 20px 0;
+  min-height: 370px;
 }
 
 .carousel-review-size {
@@ -58,8 +59,16 @@ main div.customer-reviews .slide-reviews {
 main div.customer-reviews .customer-reviews-undertitle {
   color: var(--text-color);
 }
+@media (min-width: 402px) {
+  .review-carousel-position {
+    min-height: 280px;
+  }
+}
 
 @media (min-width: 765px) {
+  .review-carousel-position {
+    min-height: 160px;
+  }
   main div.customer-reviews h2 {
     font-size: 2.5625rem;
   }
