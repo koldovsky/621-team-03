@@ -175,7 +175,6 @@ nav > ul > li a:hover {
 }
 
 body > header > div.header-nav > nav > ul > li > a {
-    display: block;
   position: relative;
   padding: 0.2em 0;
 }
@@ -184,8 +183,9 @@ body > header > div.header-nav > nav > ul > li > a::after {
   position: absolute;
   bottom: 0;
   left: 0;
+  display: inline-block;
   width: 100%;
-  height: 0.1em;
+  height: 1px;
   background-color: var(--decoration-color);
   opacity: 0;
   transition: opacity .3s, transform .3s;
@@ -198,12 +198,6 @@ body > header > div.header-nav > nav > ul > li > a:focus::after {
   transform: translate3d(0, 0.2em, 0);
   transform: scale(1);
 }
-@media (max-width:767px) {
-    body > header > div.header-nav > nav > ul > li > a::after {
-        display: none;
-    } 
-}
-
 
 .container {
     max-width: 1366px;
@@ -262,4 +256,8 @@ div.buttons-container {
 
 .clock {
     color: var(--decoration-color);
+}
+
+.button-buy:hover {
+    color: var(--basic-color);
 }
