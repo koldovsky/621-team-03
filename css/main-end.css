@@ -8,23 +8,34 @@ body {
     background-color: var(--basic-color);
 }
 
-.loftstylephoto {
-    display: block;
-    text-align: center;
+.loft-style-photo {
+    margin: 25px;
+    display: flex;
+    justify-content: center;
 }
 
 .loftstylephotoimg {
     width: 100%;
 }
 
-.line-columns {
-    display: inline-flex;
-    flex-direction: column;
+.important-information {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
     align-items: stretch;
-    margin: 25px;
-    width: 325px;
     flex-shrink: 2;
+    margin: 5px;
+}
+
+.line-columns {
+    margin: 10px;
+    margin-left: 25px;
+}
+
+.decor-string {
+    height: 2px;
+    width: 100px;
+    background-color: #c8693a;
 }
 
 .line-columns p {
