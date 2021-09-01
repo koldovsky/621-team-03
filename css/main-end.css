@@ -20,11 +20,17 @@ body {
 
 .important-information {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
     align-items: stretch;
     flex-shrink: 2;
     margin: 5px;
+}
+
+@media (min-width: 700px) {
+    .important-information {
+    flex-direction: row;
+    }
 }
 
 .line-columns {
@@ -164,4 +170,8 @@ h4 {
     font-style: normal;
     color: var(--text-color);
     padding: 0px 26px 0px 26px;
+}
+
+.loft-img-history {
+    min-width: 100%;
 }

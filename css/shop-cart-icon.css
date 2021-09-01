@@ -1,7 +1,9 @@
-.icon-shop-cart-inner {
-    /* width: 60px; */
+body > div.icon-shop-cart-inner.container {
+    display: flex;
+    justify-content: flex-end;
+    width: 80vw;
     height: 60px;
-    right: 15%; 
+    right: 31%; 
     top: 20%;
     position: fixed;
 }
@@ -24,12 +26,14 @@
     height: 21px;
     border-radius: -20%;
     position: absolute;
-    top: -3px; right: -55px;
+    top: -3px;
 }
 
 @media (min-width: 500px) {
-    .icon-shop-cart-inner {
-        width: 90px;
+    body > div.icon-shop-cart-inner.container {
+        display: flex;
+        justify-content: flex-end;
+        
         height: 90px;
         right: 3%;
     }
@@ -47,7 +51,7 @@
     .total-product-in-cart {
         width: 72px;
         height: 20px;
-        right: -32px;
+        
     }
 }
 
