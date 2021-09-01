@@ -1,9 +1,8 @@
 body > div.icon-shop-cart-inner.container {
     display: flex;
     justify-content: flex-end;
-    width: 80vw;
+    width: 95vw;
     height: 60px;
-    right: 31%; 
     top: 20%;
     position: fixed;
 }
