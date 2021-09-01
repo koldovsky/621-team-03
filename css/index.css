@@ -61,8 +61,8 @@ p {
     display: none;
     position: fixed; 
     bottom: 20px; 
-    right: 30px; 
-    z-index: 99;
+    right: 60px; 
+    z-index: 99; 
     border: none; 
     outline: none; 
     background-color: var(--decoration-color); 
