@@ -19,17 +19,16 @@ body {
 }
 
 .important-information {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: space-around;
     align-items: stretch;
-    flex-shrink: 2;
     margin: 5px;
 }
 
 @media (min-width: 700px) {
     .important-information {
-    flex-direction: row;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
     }
 }
 
