@@ -62,12 +62,15 @@
                 
                 .footer-items {
                     display: flex;
-                    flex-direction: row;
-                    margin: 15px;
+                    flex-direction: column;
+                    margin: 27px;
+                    align-items: center;
+                    padding-top: 17px;
                 }
                 
                 .map {
                     margin-left: 20px;
+                    margin-top: 27px;
                 }
                 
                 .footer {
@@ -297,11 +300,10 @@
                 }
                 
                 .entring-form {
-                    display: flex;
-                    right: 0;
-                    margin-left: 450px;
                     border: 5px solid var(--decoration-color);
                     border-radius: 10px;
+                    margin-top: 20px;
+                    margin-left: 44px;
                 }
                 
                 .form-test {
@@ -391,4 +393,37 @@
                     height: 347.5px;
                     border-radius: 7px;
                     background-color: var(--decoration-color);
+                }
+                
+                .carousel-items-p {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                }
+                
+                @media(min-width: 960px) {
+                    .footer-items {
+                        display: flex;
+                        flex-direction: row;
+                        margin: 15px;
+                    }
+                    .entring-form {
+                        display: flex;
+                        right: 0;
+                        margin-left: 450px;
+                        border: 5px solid var(--decoration-color);
+                        border-radius: 10px;
+                    }
+                    .map {
+                        margin-left: 20px;
+                        margin-bottom: 32px;
+                    }
+                    .carousel-items-p {
+                        display: grid;
+                        grid-template-columns: 1fr 2fr 1fr;
+                        grid-auto-rows: minmax(100px, auto);
+                        grid-gap: 2em;
+                        justify-items: center;
+                    }
                 }
